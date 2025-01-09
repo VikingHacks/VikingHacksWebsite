@@ -189,7 +189,7 @@ export default function HomePage() {
           {/* <section className="flex justify-between text-black py-20 items-end">
             // <span className="text-[10vw] md:text-[4vw] font-medium leading-none tracking-tighter">Sponsors</span>
           </section> */}
-           <Sponsors partners={partners} diamond={diamond} gold={gold} />
+           {/* <Sponsors partners={partners} diamond={diamond} gold={gold} /> */}
           {/* <div className="w-full h-screen"></div> */}
         </div>
         <Footer />
