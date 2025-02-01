@@ -10,9 +10,10 @@ type SponsorsProps = {
   partners: Sponsor[]; // Top-tier sponsors
   diamond: Sponsor[]; // Diamond sponsors
   gold: Sponsor[]; // Gold sponsors
+  supporters: Sponsor[]; // Gold sponsors
 };
 
-const Sponsors: React.FC<SponsorsProps> = ({ partners, diamond, gold }) => {
+const Sponsors: React.FC<SponsorsProps> = ({ partners, diamond, gold, supporters }) => {
   // Section rendering helper
   const SponsorSection = ({
     title,
@@ -76,6 +77,13 @@ const Sponsors: React.FC<SponsorsProps> = ({ partners, diamond, gold }) => {
         <SponsorSection
           title="Gold"
           sponsors={gold}
+          gridCols="grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+        />
+
+         {/* Supporters Section */}
+         <SponsorSection
+          title="Supporters"
+          sponsors={supporters}
           gridCols="grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
         />
       </div>

@@ -91,7 +91,7 @@ const ComingSoon: React.FC = () => {
         )}
 
         <iframe
-          className={`airtable-embed bg-transparent w-full h-[1600px] md:h-[1500px] ${isLoading ? 'hidden' : 'block'}`}
+          className={`airtable-embed bg-transparent w-full h-[2100px] md:h-[2000px] ${isLoading ? 'hidden' : 'block'}`}
           src="https://airtable.com/embed/appeGVZj2ycWs8L6r/pagHioSdm30pXIt5R/form"
           frameBorder="0"
           onLoad={() => setIsLoading(false)}

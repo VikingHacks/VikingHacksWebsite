@@ -35,25 +35,53 @@ const FAQList = {
 
 const partners = [
   { 
-    name: "Supabase", 
-    logo: "https://assets.basehub.com/8da07b60/4ccbdd65a970c44c2c99cacdf552000b/supabase.svg", 
-    link: "https://supabase.io"
+    name: "SFBU", 
+    logo: "/sponsors/logos/SFBU_F.png", 
+    link: "https://sfbu.edu"
   },
 ];
 
 const diamond = [
   { 
-    name: "Supabase", 
-    logo: "https://assets.basehub.com/8da07b60/4ccbdd65a970c44c2c99cacdf552000b/supabase.svg", 
-    link: "https://supabase.io"
+    name: "Palo Alto Networks", 
+    logo: "/sponsors/logos/PAN_F.png", 
+    link: "https://www.paloaltonetworks.com/"
+  },
+  { 
+    name: "Berbawy Makers", 
+    logo: "/sponsors/logos/BERBAWY_F.png", 
+    link: "https://berbawymakers.com/"
   },
 ];
 
 const gold = [
   { 
-    name: "Supabase", 
-    logo: "https://assets.basehub.com/8da07b60/4ccbdd65a970c44c2c99cacdf552000b/supabase.svg", 
-    link: "https://supabase.io"
+    name: "Replit", 
+    logo: "/sponsors/logos/REPLIT_F.png", 
+    link: "https://replit.com/"
+  },
+  { 
+    name: "Keep the Bay Beautiful", 
+    logo: "/sponsors/logos/KTBB_F.png", 
+    link: "https://keepbayareabeautiful.wixsite.com/bayarea"
+  },
+  { 
+    name: "Empyrean Technologies", 
+    logo: "/sponsors/logos/EMPYREAN_F.png", 
+    link: "https://www.empyrean-tech.com/"
+  },
+];
+
+const supporters = [
+  { 
+    name: ".xyz", 
+    logo: "/sponsors/logos/XYZ_F.png", 
+    link: "https://gen.xyz"
+  },
+  { 
+    name: "AoPS", 
+    logo: "/sponsors/logos/AOPS_F.png", 
+    link: "https://artofproblemsolving.com/"
   },
 ];
 
@@ -189,7 +217,7 @@ export default function HomePage() {
           {/* <section className="flex justify-between text-black py-20 items-end">
             // <span className="text-[10vw] md:text-[4vw] font-medium leading-none tracking-tighter">Sponsors</span>
           </section> */}
-           {/* <Sponsors partners={partners} diamond={diamond} gold={gold} /> */}
+           <Sponsors partners={partners} diamond={diamond} gold={gold} supporters={supporters} />
           {/* <div className="w-full h-screen"></div> */}
         </div>
         <Footer />
