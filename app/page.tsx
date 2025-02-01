@@ -48,6 +48,11 @@ const diamond = [
     link: "https://www.paloaltonetworks.com/"
   },
   { 
+    name: "Marchup", 
+    logo: "/sponsors/logos/MARCHUP_F.png", 
+    link: "https://marchup.net/"
+  },
+  { 
     name: "Berbawy Makers", 
     logo: "/sponsors/logos/BERBAWY_F.png", 
     link: "https://berbawymakers.com/"
