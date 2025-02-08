@@ -39,6 +39,11 @@ const partners = [
     logo: "/sponsors/logos/SFBU_F.png", 
     link: "https://sfbu.edu"
   },
+  { 
+    name: "LaunchX", 
+    logo: "/sponsors/logos/LAUNCHX_F.png", 
+    link: "https://launchx.com"
+  },
 ];
 
 const diamond = [
