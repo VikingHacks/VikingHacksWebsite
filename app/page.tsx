@@ -142,7 +142,7 @@ export default function HomePage() {
         <Header />
         <div className="m-5 md:m-12 mt-20">
           {/* main container */}
-          <div className="h-[60vh] w-full overflow-hidden relative transition-all">
+          <div className="h-[60lvh] w-full overflow-hidden relative transition-all">
             <Image
               src={"/IHS_PHOTO1.jpg"}
               alt={"Fremont Downtown Event Center"}
@@ -151,6 +151,7 @@ export default function HomePage() {
                 objectFit: "cover",
                 objectPosition: "50% 100%"
               }}
+              priority
             />
           </div>
           <div className="flex flex-col lg:flex-row my-20 justify-between lg:items-center">
