@@ -1,45 +1,6 @@
 "use client"
-import Link from 'next/link'
-import Image from 'next/image';
+import { useState, useEffect } from 'react';
 import { Balancer } from 'react-wrap-balancer';
-
-// const ComingSoon: React.FC = () => {
-//     return (
-//         <div className="text-black grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-//             <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-//                 <Image src="/viking_logo_transparent.png" alt="Viking Hacks Logo" height={37.97} width={99.2} priority />
-//                 <h1 className="text-3xl font-semibold -mt-5">Hey there!</h1>
-//                 <ul className="list-inside list-disc text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-//                     <li className="mb-2">
-//                         We&apos;re preparing the live site {" "}
-//                         {/* <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-//               stores
-//             </code> */}
-//                     </li>
-//                     <li>Please check back later!</li>
-//                 </ul>
-
-//                 <div className="flex gap-4 items-center flex-col sm:flex-row">
-//                     <a
-//                         className="border border-solid border-transparent uppercase font-mono transition-colors flex items-center justify-center bg-black text-white gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-//                         href="mailto:hello@vikinghacks.com"
-//                         target="_blank"
-//                         rel="noopener noreferrer"
-//                     >
-//                         <Image
-//                             className="dark:invert"
-//                             src="/mail.svg"
-//                             alt="mail icon"
-//                             width={20}
-//                             height={20}
-//                         />
-//                         Email us
-//                     </a>
-//                 </div>
-//             </main>
-//         </div>
-//     )
-// }
 
 const TrackList = {
   'Track1': {
@@ -60,10 +21,14 @@ const TrackList = {
       "No blah blah"
     ],
   },
+  'Track4': {
+    Description: 'Finalizing teams and project ideas.',
+    Guidelines: [
+      "No blah blah"
+    ],
+  },
 };
 
-// export default ComingSoon;
-import { useState, useEffect } from 'react';
 // Define the countdown start and event end times.
 const countdownStartTime = new Date('2025-02-15T08:30:00-08:00');
 const eventEndTime = new Date('2025-02-15T18:00:00-08:00');
@@ -166,9 +131,14 @@ export default function Home() {
   };
 
   // Data for the four tabs.
+  const [openTrack, setOpenTrack] = useState<string | null>(null);
+	const toggleTrack = (question: string) => {
+		setOpenTrack((prev) => (prev === question ? null : question));
+	};
+
   const tabs = [
     {
-      title: 'Introduction',
+      title: 'Intro',
       content: (
         <div>
           <h2 className="text-2xl font-mono font-semibold mb-4">
@@ -177,7 +147,7 @@ export default function Home() {
           <p>
             Welcome to Viking Hacks 2025! In this competition, you'll have the chance
             to innovate, create, and collaborate with peers to solve real-world challenges.
-            Choose from various tracks that cater to different interests and expertise levels.
+            Choose from various    that cater to different interests and expertise levels.
           </p>
         </div>
       ),
@@ -192,19 +162,43 @@ export default function Home() {
           <p>
             Viking Hacks 2025 will have 4 tracks participants can choose from. Your project must be directly related to the topic and guidelines of your track.
           </p>
-          <div className="mt-4 grid grid-rows-4 md:grid-rows-2 md:grid-cols-2 gap-2">
+          {/* <div className="mt-4 grid grid-rows-4 md:grid-rows-2 md:grid-cols-2 gap-2"> */}
+          <div className="mt-4 flex flex-col gap-2">
             {Object.entries(TrackList).map(([TrackName, { Description, Guidelines }]) => {
-              const Tracks = Guidelines.map((Guideline) =>
+              const isOpen = openTrack === TrackName;
+              const GuidelineList = Guidelines.map((Guideline) =>
                 <li key={Guideline}>{Guideline}</li>
               );
               return (
-                <div key={TrackName} className="flex flex-col items-start border p-4">
-                  <h1>{TrackName}</h1>
-                  <h3>{Description}</h3>
-                  <ul className="list-disc ml-4">
-                    {Tracks}
-                  </ul>
-                </div>
+                <button
+                 key={TrackName} 
+                 className="flex flex-col items-start border hover:border-blue-500 hover:cursor-pointer p-4 select-none"
+                 onClick={() => toggleTrack(TrackName)}
+                 >
+                  <div className="flex justify-between items-center w-full">
+                    <h1 className="font-mono tracking-tight font-semibold text-lg">{TrackName}</h1>
+                    <svg
+                      className={`transition-transform rotate-90 -translate-y-[0.1rem] duration-100 mt-1 min-w-[15px] ${isOpen ? "-rotate-90" : ""
+                        }`}
+                      fill="#000000"
+                      width="15px"
+                      height="15px"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <polygon
+                        fillRule="evenodd"
+                        points="17.586 13 3 13 3 11 17.586 11 11.293 4.707 12.707 3.293 21.414 12 12.707 20.707 11.293 19.293"
+                      />
+                    </svg>
+                  </div>
+                  <div className={`${isOpen ? "block" : "hidden"}`}>
+                    <h3>{Description}</h3>
+                    <ul className="list-disc ml-4 text-left">
+                      {GuidelineList}
+                    </ul>
+                  </div>
+                </button>
               );
             })}
           </div>
