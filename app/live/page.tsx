@@ -44,8 +44,8 @@ import Image from 'next/image';
 "use client"
 import { useState, useEffect } from 'react';
 // Define the countdown start and event end times.
-const countdownStartTime = new Date('2025-02-09T08:30:00-08:00');
-const eventEndTime = new Date('2025-02-09T21:00:00-08:00');
+const countdownStartTime = new Date('2025-02-15T08:30:00-08:00');
+const eventEndTime = new Date('2025-02-15T18:00:00-08:00');
 
 // Helper function to compute the current countdown state.
 function getInitialCountdown() {
@@ -150,7 +150,7 @@ export default function Home() {
       title: 'Introduction',
       content: (
         <div>
-          <h2 className="text-2xl font-bold mb-4">
+          <h2 className="text-2xl font-mono font-semibold mb-4">
             Introduction & Competition Context
           </h2>
           <p>
@@ -165,7 +165,7 @@ export default function Home() {
       title: 'Setup',
       content: (
         <div>
-          <h2 className="text-2xl font-bold mb-4">Setup, WiFi, and Apps</h2>
+          <h2 className="text-2xl font-mono font-semibold mb-4">Setup, WiFi, and Apps</h2>
           <p>
             To get started, connect to the event WiFi:{" "}
             <strong>FUSDGuest</strong>
@@ -180,7 +180,7 @@ export default function Home() {
       title: 'Reminders',
       content: (
         <div>
-          <h2 className="text-2xl font-bold mb-4">
+          <h2 className="text-2xl font-mono font-semibold mb-4">
             Hacking & General Reminders
           </h2>
               <ul className="list-disc space-y-2 ml-4">
@@ -207,7 +207,7 @@ export default function Home() {
       title: 'Submission',
       content: (
         <div>
-          <h2 className="text-2xl font-bold mb-4">
+          <h2 className="text-2xl font-mono font-semibold mb-4">
             Project Submission Guidelines
           </h2>
           <p>
@@ -230,7 +230,7 @@ export default function Home() {
         {/* Countdown Section */}
         <div className="text-center my-8">
           <div suppressHydrationWarning
-            className={`text-[11vh] mt-20 md:text-[12vh] lg:text-[14vh] leading-none font-mono ${
+            className={`text-[13vw] mt-20 md:text-[12vw] lg:text-[8vw] xl:text-9xl leading-none font-mono ${
               !countdownActive
                 ? "text-gray-300"
                 : deadlinePassed
