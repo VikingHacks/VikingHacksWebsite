@@ -52,11 +52,11 @@ const Sponsors: React.FC<SponsorsProps> = ({ partners, diamond, gold, supporters
 
   return (
     <section
-      className="text-black relative pb-24 pt-16 md:pt-10 lg:pt-32"
+      className="text-black relative pb-24"
       id="sponsors-section"
     >
       <div className="relative">
-        <h2 className="text-[10vw] md:text-[4vw] font-medium leading-none tracking-tight mb-16">
+        <h2 className="text-[10vw] md:text-[4vw] font-medium leading-none tracking-tighter mb-16">
           Sponsors
         </h2>
         {/* Partner Section */}
