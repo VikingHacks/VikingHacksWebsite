@@ -43,7 +43,7 @@ const ScheduleList = {
   },
   'Dinner Service': {
     Description: 'Participants grab dinner while waiting.',
-    Time: '7:30pm',
+    Time: '6:00pm',
   },
   'Judging Ends': {
     Description: 'Final project evaluations complete.',
