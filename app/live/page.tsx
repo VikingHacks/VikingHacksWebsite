@@ -41,7 +41,6 @@ import Image from 'next/image';
 // }
 
 // export default ComingSoon;
-"use client"
 import { useState, useEffect } from 'react';
 // Define the countdown start and event end times.
 const countdownStartTime = new Date('2025-02-15T08:30:00-08:00');
@@ -151,7 +150,7 @@ export default function Home() {
       content: (
         <div>
           <h2 className="text-2xl font-mono font-semibold mb-4">
-            Introduction & Competition Context
+            Introduction and Competition Context
           </h2>
           <p>
             Welcome to Viking Hacks 2025! In this competition, you'll have the chance
@@ -165,7 +164,9 @@ export default function Home() {
       title: 'Setup',
       content: (
         <div>
-          <h2 className="text-2xl font-mono font-semibold mb-4">Setup, WiFi, and Apps</h2>
+          <h2 className="text-2xl font-mono font-semibold mb-4">
+            Setup, WiFi, and Apps
+            </h2>
           <p>
             To get started, connect to the event WiFi:{" "}
             <strong>FUSDGuest</strong>
@@ -181,7 +182,7 @@ export default function Home() {
       content: (
         <div>
           <h2 className="text-2xl font-mono font-semibold mb-4">
-            Hacking & General Reminders
+            Hacking and General Reminders
           </h2>
               <ul className="list-disc space-y-2 ml-4">
                   <li>
