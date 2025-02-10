@@ -1,6 +1,7 @@
 "use client"
 import Link from 'next/link'
 import Image from 'next/image';
+import { Balancer } from 'react-wrap-balancer';
 
 // const ComingSoon: React.FC = () => {
 //     return (
@@ -39,6 +40,27 @@ import Image from 'next/image';
 //         </div>
 //     )
 // }
+
+const TrackList = {
+  'Track1': {
+    Description: 'Participants arrive and check-in begins.',
+    Guidelines: [
+      "No blah blah"
+    ],
+  },
+  'Track2': {
+    Description: 'Official start, event kickoff.',
+    Guidelines: [
+      "No blah blah"
+    ],
+  },
+  'Track3': {
+    Description: 'Finalizing teams and project ideas.',
+    Guidelines: [
+      "No blah blah"
+    ],
+  },
+};
 
 // export default ComingSoon;
 import { useState, useEffect } from 'react';
@@ -156,6 +178,52 @@ export default function Home() {
             Welcome to Viking Hacks 2025! In this competition, you'll have the chance
             to innovate, create, and collaborate with peers to solve real-world challenges.
             Choose from various tracks that cater to different interests and expertise levels.
+          </p>
+        </div>
+      ),
+    },
+    {
+      title: 'Tracks',
+      content: (
+        <div>
+          <h2 className="text-2xl font-mono font-semibold mb-4">
+            Hackathon Tracks
+          </h2>
+          <p>
+            Viking Hacks 2025 will have 4 tracks participants can choose from. Your project must be directly related to the topic and guidelines of your track.
+          </p>
+          <div className="mt-4 grid grid-rows-4 md:grid-rows-2 md:grid-cols-2 gap-2">
+            {Object.entries(TrackList).map(([TrackName, { Description, Guidelines }]) => {
+              const Tracks = Guidelines.map((Guideline) =>
+                <li key={Guideline}>{Guideline}</li>
+              );
+              return (
+                <div key={TrackName} className="flex flex-col items-start border p-4">
+                  <h1>{TrackName}</h1>
+                  <h3>{Description}</h3>
+                  <ul className="list-disc ml-4">
+                    {Tracks}
+                  </ul>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: 'Awards',
+      content: (
+        <div>
+          <h2 className="text-2xl font-mono font-semibold mb-4">
+            Awards
+            </h2>
+          <p>
+            To get started, connect to the event WiFi:{" "}
+            <strong>FUSDGuest</strong>
+            <br />Use the provided apps for scheduling,
+            communication, and resource sharing:
+            (stuff here)
           </p>
         </div>
       ),
