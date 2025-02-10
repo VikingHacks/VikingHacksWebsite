@@ -271,7 +271,7 @@ export default function HomePage() {
               <Balancer className="font-mono tracking-[0.02em] font-normal text-neutral-600 mb-8">
               During the hackathon, all updates, announcements, and essential resources will be posted on our live page. Whether it&apos;s schedule changes, API keys, important links, or project submission details, everything you need will be there.
               </Balancer>
-              <Link href="/register" target={"_self"} className="
+              <Link href="/live" target={"_self"} className="
                         font-mono font-light text-sm
                         group
                         flex
