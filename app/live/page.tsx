@@ -213,11 +213,23 @@ export default function Home() {
             Awards
             </h2>
           <p>
-            To get started, connect to the event WiFi:{" "}
-            <strong>FUSDGuest</strong>
-            <br />Use the provided apps for scheduling,
-            communication, and resource sharing:
-            (stuff here)
+            <ul className="space-y-10">
+              <li className="flex flex-col gap-2">
+                <h1 className="flex gap-2 font-mono items-center">
+                  <p className="bg-orange-400 px-2 py-[0.1rem] font-light">$1,500</p>
+                  <p className="text-lg font-bold">LaunchX Scholarship</p>
+                </h1>
+                <Balancer className="leading-tight">
+                LaunchX is not just a program; it&apos;s where future entrepreneurs are made. With world-class mentorship, hands-on experience, and a global network of innovators, LaunchX has shaped some of the brightest young founders in the world.
+                </Balancer>
+              </li>
+              <li className="">
+                <h1 className="flex gap-2 font-mono items-center">
+                  <p className="bg-black px-2 py-[0.1rem] text-white font-light">$100</p>
+                  <p className="text-lg font-bold">Apple Air Tag</p>
+                </h1>
+              </li>
+            </ul>
           </p>
         </div>
       ),
