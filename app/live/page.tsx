@@ -313,12 +313,12 @@ export default function Home() {
         {/* Tabs Section */}
         <div className="bg-white mt-20">
           <div className="border-b">
-            <nav className="flex justify-evenly overflow-x-scroll overflow-y-hidden">
+            <nav className="flex justify-evenly overflow-x-auto">
               {tabs.map((tab, index) => (
                 <button
                   key={index}
                   onClick={() => setActiveTab(index)}
-                  className={`grow px-4 py-2 -mb-px font-semibold text-sm font-mono uppercase border-b-2 border-transparent focus:outline-none ${
+                  className={`grow px-4 py-2 font-semibold text-sm font-mono uppercase border-b-2 border-transparent focus:outline-none ${
                     activeTab === index
                       ? "border-b-2 border-blue-500 text-blue-500"
                       : "text-gray-600 hover:text-blue-500"
