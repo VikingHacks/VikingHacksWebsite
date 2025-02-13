@@ -147,7 +147,7 @@ export default function Home() {
           <p>
             Welcome to Viking Hacks 2025! In this competition, you'll have the chance
             to innovate, create, and collaborate with peers to solve real-world challenges.
-            Choose from various    that cater to different interests and expertise levels.
+            Choose from various that cater to different interests and expertise levels.
           </p>
         </div>
       ),
