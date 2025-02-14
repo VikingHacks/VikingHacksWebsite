@@ -3,30 +3,24 @@ import { useState, useEffect } from 'react';
 import { Balancer } from 'react-wrap-balancer';
 
 const TrackList = {
-  'Track1': {
-    Description: 'Participants arrive and check-in begins.',
+  'Ed Tech': {
+    Description: 'Technology plays a crucial role in improving healthcare, mental wellness, and overall well-being. For this track, develop software that enhances access to healthcare, promotes healthy lifestyles, or address gaps in wellness and accessibility. The top projects in this track will use unique solutions to tackle common challenges in a new and impactful way.',
     Guidelines: [
-      "No blah blah"
+      "Projects should focus on health, wellness, accessibility, or healthcare innovation", "Creativity and originality are key. Solutions that explore uncommon approaches, unique APIs, or novel applications will receive higher scores from judges.", "Simply repackaging existing tools (e.g., ChatGPT wrappers) will not score as well."
     ],
   },
-  'Track2': {
-    Description: 'Official start, event kickoff.',
+  'Health/Wellbeing': {
+    Description: 'Education has changed a lot in the past few years with Gen. AI hitting the market. This new technology has the potential to make learning more engaging, accessible, and effective. For this track, develop software that enhances education, whether by improving learning experiences, increasing accessibility, or addressing gaps in traditional educational methods.',
     Guidelines: [
-      "No blah blah"
+      "Projects should focus on improving education, learning accessibility, or skill development.", "Innovation is key. Judges will give higher scores to solutions that build off uncommon approaches, unique APIs, or novel educational techniques rather than repackaging existing tools (e.g., basic chatbot tutors)", "Consider user experience—effective educational tools should be engaging, scalable, and easy to use."
     ],
   },
-  'Track3': {
-    Description: 'Finalizing teams and project ideas.',
+  'Low/No Code': {
+    Description: 'Not every impactful solution requires extensive coding. For this track, create software-based projects using low-code or no-code platforms. Whether automating workflows, building interactive applications, or streamlining a complex process, projects in this track should showcase the power of creative problem-solving using minimal coding.',
     Guidelines: [
-      "No blah blah"
+      "Solutions must be built primarily using low-code or no-code tools such as app builders, workflow automation tools, or API integrations.", "Design mockups in Figma are allowed, but they should represent a clear MVP with a defined user flow.", "You must use a low-code or no-code platform (e.g., Bubble, Webflow, Make, Google AppSheet).", "Projects should be user-friendly and demonstrate the effectiveness of low/no-code development", "Open to all experience levels"
     ],
-  },
-  'Track4': {
-    Description: 'Finalizing teams and project ideas.',
-    Guidelines: [
-      "No blah blah"
-    ],
-  },
+  }
 };
 
 // Define the countdown start and event end times.
@@ -160,7 +154,7 @@ export default function Home() {
             Hackathon Tracks
           </h2>
           <p>
-            Viking Hacks 2025 will have 4 tracks participants can choose from. Your project must be directly related to the topic and guidelines of your track.
+            Viking Hacks 2025 will have 3 tracks participants can choose from. Your project must be directly related to the topic and guidelines of your track.
           </p>
           {/* <div className="mt-4 grid grid-rows-4 md:grid-rows-2 md:grid-cols-2 gap-2"> */}
           <div className="mt-4 flex flex-col gap-2">
@@ -216,6 +210,13 @@ export default function Home() {
             <ul className="space-y-10">
               <li className="flex flex-col gap-2">
                 <h1 className="flex gap-2 font-mono items-center">
+                  <p className="bg-orange-400 px-2 py-[0.1rem] font-light">Grand Prize</p>
+                  <p className="text-lg font-bold">Sony ULT WEAR Noise Cancelling Headphones</p>
+                </h1>
+              </li>
+
+              <li className="flex flex-col gap-2">
+                <h1 className="flex gap-2 font-mono items-center">
                   <p className="bg-orange-400 px-2 py-[0.1rem] font-light">$1,500</p>
                   <p className="text-lg font-bold">LaunchX Scholarship</p>
                 </h1>
@@ -223,10 +224,46 @@ export default function Home() {
                 LaunchX is not just a program; it&apos;s where future entrepreneurs are made. With world-class mentorship, hands-on experience, and a global network of innovators, LaunchX has shaped some of the brightest young founders in the world.
                 </Balancer>
               </li>
+
               <li className="">
                 <h1 className="flex gap-2 font-mono items-center">
-                  <p className="bg-black px-2 py-[0.1rem] text-white font-light">$100</p>
-                  <p className="text-lg font-bold">Apple Air Tag</p>
+                  <p className="bg-black px-2 py-[0.1rem] text-white font-light">Ed Tech 1st Place</p>
+                  <p className="text-lg font-bold">JBL Clip 3</p>
+                </h1>
+              </li>
+
+              <li className="">
+                <h1 className="flex gap-2 font-mono items-center">
+                  <p className="bg-black px-2 py-[0.1rem] text-white font-light">Ed Tech 2nd Place</p>
+                  <p className="text-lg font-bold">Govee Smart LED Strip</p>
+                </h1>
+              </li>
+
+              <li className="">
+                <h1 className="flex gap-2 font-mono items-center">
+                  <p className="bg-black px-2 py-[0.1rem] text-white font-light">Health/Wellbeing 1st Place</p>
+                  <p className="text-lg font-bold">Apple Airtag</p>
+                </h1>
+              </li>
+
+              <li className="">
+                <h1 className="flex gap-2 font-mono items-center">
+                  <p className="bg-black px-2 py-[0.1rem] text-white font-light">Health/Wellbeing 2nd Place</p>
+                  <p className="text-lg font-bold">Anker Wireless Charger</p>
+                </h1>
+              </li>
+
+              <li className="">
+                <h1 className="flex gap-2 font-mono items-center">
+                  <p className="bg-black px-2 py-[0.1rem] text-white font-light">Low/No Code 1st Place</p>
+                  <p className="text-lg font-bold">Anker Powercore</p>
+                </h1>
+              </li>
+
+              <li className="">
+                <h1 className="flex gap-2 font-mono items-center">
+                  <p className="bg-black px-2 py-[0.1rem] text-white font-light">Low/No Code 2nd Place</p>
+                  <p className="text-lg font-bold">Rocketbook Smart Reusable Notebook</p>
                 </h1>
               </li>
             </ul>
@@ -240,14 +277,46 @@ export default function Home() {
         <div>
           <h2 className="text-2xl font-mono font-semibold mb-4">
             Setup, WiFi, and Apps
-            </h2>
+          </h2>
           <p>
             To get started, connect to the event WiFi:{" "}
             <strong>FUSDGuest</strong>
-            <br />Use the provided apps for scheduling,
-            communication, and resource sharing:
-            (stuff here)
           </p>
+      
+          <h3 className="text-xl font-semibold mt-6 mb-2">OpenAI API Keys</h3>
+          <p>
+            We are providing <strong>5 OpenAI API keys</strong> for participants to use. 
+            These keys are shared, so at high usage times (like judging), there may be rate limits. 
+            We recommend recording a demo while your project is working.
+          </p>
+          <ul className="list-disc list-inside my-2">
+            <li><code>sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code></li>
+            <li><code>sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code></li>
+            <li><code>sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code></li>
+            <li><code>sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code></li>
+            <li><code>sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code></li>
+          </ul>
+          <p className="font-bold text-red-600">
+            If you face any issues with the API keys, reach out to an organizer immediately.
+          </p>
+      
+          <h3 className="text-xl font-semibold mt-6 mb-2">Hosting Your Frontend</h3>
+          <p>
+            We recommend hosting your frontend by writing your code on 
+            <a href="https://github.com/" className="text-blue-500 underline"> GitHub </a> 
+            and connecting the repository to 
+            <a href="https://vercel.com/" className="text-blue-500 underline"> Vercel </a>.
+          </p>
+      
+          <h3 className="text-xl font-semibold mt-6 mb-2">Working in a Team</h3>
+          <p>
+            If you are working in a team, we suggest using a <strong>shared GitHub repository</strong>.
+            Each team member can work on separate parts of the project under the same repo, but in a different subfolder.
+            Use <a href="https://desktop.github.com/" className="text-blue-500 underline"> GitHub Desktop </a> 
+            to monitor changes. In the end, merge the different parts into a complete website.
+          </p>
+          <br />
+          <br />
         </div>
       ),
     },
@@ -285,12 +354,38 @@ export default function Home() {
           <h2 className="text-2xl font-mono font-semibold mb-4">
             Project Submission Guidelines
           </h2>
+          
+          <h3 className="text-xl font-semibold mt-4 mb-2">Using Marchup for Submission</h3>
           <p>
-            When you're ready to submit your project, visit ...
-            <br />
-            Be sure to follow the submission guidelines carefully,
-            including providing a detailed project description, a demo link, and contact information
-            for your team members.
+            We are using <a href="https://marchup.net/" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Marchup</a>, 
+            a platform many of you may not have used before. It functions like a LinkedIn for high schoolers 
+            and will serve as the hub for all project submissions.
+          </p>
+          
+          <h3 className="text-lg font-semibold mt-4">Steps to Submit Your Project:</h3>
+          <ol className="list-decimal list-inside my-2 space-y-2">
+            <li>Create an account on <a href="https://marchup.net/" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Marchup</a>.</li>
+            <li>Find the <strong><a href="https://marchup.net/s/viking-hacks-2025/space/space/child-spaces" className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">Viking Hacks 2025</a></strong> space.</li>
+            <li><strong>Do not request to join the main space</strong>—this is unnecessary.</li>
+            <li>Create a <strong>child space</strong> under Viking Hacks 2025 for your project.</li>
+            <li>Post updates about your project in the child space's stream. These updates will be considered during judging.</li>
+          </ol>
+      
+          <h3 className="text-xl font-semibold mt-6 mb-2">Naming Your Child Space</h3>
+          <p>
+            When creating your child space, you <strong>must</strong> use this format:
+          </p>
+          <p className="bg-gray-100 p-2 rounded-md font-mono text-sm">
+            TEAM NAME - TRACK NAME - TABLE NUMBER
+          </p>
+          <p>
+            <strong>Example:</strong> <code>Sunrise - Health/Wellness - 5</code>
+          </p>
+      
+          <h3 className="text-xl font-semibold mt-6 mb-2">Team Member Requirements</h3>
+          <p className="text-red-600 font-bold mb-10">
+            All members of your team must sign up and be part of the child space. 
+            Otherwise, they will be ineligible for prizes.
           </p>
         </div>
       ),
