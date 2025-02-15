@@ -5,7 +5,7 @@ import Link from "next/link";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FAQ from "../components/FAQ";
-import Sponsors from "../components/Sponsors";
+import Sponsors from "../components/Sponsors"; 
 // import ScheduleItem from "../components/ScheduleItem";
 import { Balancer } from "react-wrap-balancer";
 import DottedLine from "../components/DottedLine";
