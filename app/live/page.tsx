@@ -274,7 +274,7 @@ export default function Home() {
               }} />
             </h3>
             <p>
-              We are providing <strong>5 OpenAI API keys</strong> for participants to use.
+              We are providing <strong>3 OpenAI API keys</strong> for participants to use.
               These keys are shared, so at high usage times (like judging), there may be rate
               limits. We recommend recording a demo while your project is working.
             </p>
