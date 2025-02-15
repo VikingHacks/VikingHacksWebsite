@@ -280,13 +280,13 @@ export default function Home() {
             </p>
             <ul className="list-decimal list-inside mt-1 space-y-2">
               <li>
-                {apiKeyText("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")}
+                {apiKeyText("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")}
               </li>
               <li>
-                {apiKeyText("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")}
+                {apiKeyText("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")}
               </li>
               <li>
-                {apiKeyText("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")}
+                {apiKeyText("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")}
               </li>
             </ul>
           </div>
