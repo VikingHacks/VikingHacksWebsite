@@ -2,7 +2,7 @@
 import { useState, useEffect } from 'react';
 import hljs from 'highlight.js';
 import 'highlight.js/styles/panda-syntax-light.css';
-import { useRouter, useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation'; 
 import Image from 'next/image';
 import { Balancer } from 'react-wrap-balancer'; 
 
