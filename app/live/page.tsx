@@ -1,5 +1,6 @@
 "use client"
 import { useState, useEffect } from 'react';
+import hljs from 'highlight.js';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import { Balancer } from 'react-wrap-balancer';
@@ -177,6 +178,18 @@ export default function Home() {
     );
   };
 
+  const highlightedCode = (code: string, language: string = "python") => {
+    return (
+      <pre className="p-4 overflow-x-auto bg-gray-900 text-white rounded-lg">
+        <code
+          dangerouslySetInnerHTML={{
+            __html: hljs.highlight(code, { language }).value,
+          }}
+        />
+      </pre>
+    );
+  };
+
   const tabs = [
     {
       title: 'Intro',
@@ -293,6 +306,28 @@ export default function Home() {
           <p className="mt-1 font-medium tracking-tight text-red-600">
             If you face any issues with the API keys, reach out to an organizer immediately.
           </p>
+          <h3 className="text-xl font-semibold mt-6 mb-2">
+            OpenAI Example
+          </h3>
+          <text>{highlightedCode(`from openai import OpenAI
+
+client = OpenAI(api_key="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")
+
+def test_openai_api():
+
+    try:
+        response = client.chat.completions.create(model="gpt-4o",
+        messages=[{"role": "system", "content": "You are a helpful assistant."},
+                  {"role": "user", "content": "Hello, how are you?"}])
+
+        print("OpenAI API Response:")
+        print(response.choices[0].message.content)
+    except Exception as e:
+        print("Error:", e)
+
+if __name__ == "__main__":
+    test_openai_api()
+`, 'python')}</text>
           <h3 className="text-xl font-semibold mt-6 mb-2">
             Hosting Your Frontend
           </h3>
