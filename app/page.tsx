@@ -311,7 +311,7 @@ export default function HomePage() {
                       <h2 className="block md:hidden px-2 py-1 bg-black text-white w-min h-min font-mono font-light">{Time}</h2>
                     </div>
                     <Balancer className="mt-2 md:mt-0 w-3/4 text-sm">{Description}</Balancer>
-                    <h2 className="hidden md:block px-2 py-1 bg-black text-white w-min h-min font-mono font-light">{Time}</h2>
+                    <h2 className="hidden md:block px-2 py-1 bg-black text-white w-min h-min font-mono font-light">{Time}</h2> 
                   </div>
                 );
               })}
