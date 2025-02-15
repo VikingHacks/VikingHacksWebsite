@@ -300,7 +300,7 @@ export default function Home() {
                 {apiKeyText("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")}
               </li>
               <li>
-                {apiKeyText("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")}
+                {apiKeyText("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")}
               </li>
             </ul>
           </div>
