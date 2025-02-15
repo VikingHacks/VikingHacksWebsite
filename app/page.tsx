@@ -278,7 +278,7 @@ export default function HomePage() {
             <div className="w-full md:w-1/2 flex flex-col items-start">
               <span className="mt-5 md:mt-10 mb-2 text-[8vw] md:text-[3vw] font-medium leading-none tracking-tighter">Important Note</span>
               <Balancer className="font-mono tracking-[0.02em] font-normal text-neutral-600 mb-8">
-              During the hackathon, all updates, announcements, and essential resources will be posted on our live page. Whether it&apos;s schedule changes, API keys, important links, or project submission details, everything you need will be there.
+              During the hackathon, all updates, announcements, and essential resources will be posted on our live page. Whether it&apos;s schedule changes, API keys, important links, or project submission details, everything you need will be there. 
               </Balancer>
               <Link href="/live" target={"_self"} className="
                         font-mono font-light text-sm
