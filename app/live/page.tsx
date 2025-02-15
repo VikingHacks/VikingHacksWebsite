@@ -1,6 +1,7 @@
 "use client"
 import { useState, useEffect } from 'react';
 import hljs from 'highlight.js';
+import 'highlight.js/styles/github-dark.css'; // Import a theme for styling
 import { useRouter, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import { Balancer } from 'react-wrap-balancer';
@@ -311,7 +312,7 @@ export default function Home() {
           </h3>
           <text>{highlightedCode(`from openai import OpenAI
 
-client = OpenAI(api_key="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")
+client = OpenAI(api_key="...")
 
 def test_openai_api():
 
