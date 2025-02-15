@@ -37,7 +37,7 @@ const TrackList = {
 };
 
 // Define the countdown start and event end times.
-const countdownStartTime = new Date('2025-02-15T08:30:00-08:00');
+const countdownStartTime = new Date('2025-02-15T09:00:00-08:00');
 const eventEndTime = new Date('2025-02-15T18:00:00-08:00');
 
 // Helper function to compute the current countdown state.
@@ -175,7 +175,9 @@ export default function Home() {
       content: (
         <div>
           <h2 className="text-2xl font-mono font-semibold mb-4">
-            Hello there!
+            <svg className="inline -translate-y-[0.1rem]" width="8" height="8" xmlns="http://www.w3.org/2000/svg">
+              <rect width="8" height="8" className="fill-[#0057FF]" />
+            </svg> Hello there!
           </h2>
           <p>
             Welcome to Viking Hacks 2025! In this competition, you'll have the chance
@@ -190,7 +192,9 @@ export default function Home() {
       content: (
         <div>
           <h2 className="text-2xl font-mono font-semibold mb-4">
-            Hackathon Tracks
+          <svg className="inline -translate-y-[0.1rem]" width="8" height="8" xmlns="http://www.w3.org/2000/svg">
+              <rect width="8" height="8" className="fill-[#0057FF]" />
+            </svg> Hackathon Tracks
           </h2>
           <p>
             Viking Hacks 2025 will have 3 tracks participants can choose from. Your project must be directly related to the topic and guidelines of your track.
@@ -246,7 +250,9 @@ export default function Home() {
       content: (
         <div>
           <h2 className="text-2xl font-mono font-semibold mb-4">
-            Setup, WiFi, and Apps
+          <svg className="inline -translate-y-[0.1rem]" width="8" height="8" xmlns="http://www.w3.org/2000/svg">
+              <rect width="8" height="8" className="fill-[#0057FF]" />
+            </svg> Setup, WiFi, and Apps
           </h2>
           <p>
             To get started, connect to the event WiFi: {kbdText("FUSDGuest")}
@@ -282,7 +288,7 @@ export default function Home() {
               </li>
             </ul>
           </div>
-          <p className="font-bold text-red-600">
+          <p className="mt-1 font-medium tracking-tight text-red-600">
             If you face any issues with the API keys, reach out to an organizer immediately.
           </p>
           <h3 className="text-xl font-semibold mt-6 mb-2">
@@ -320,7 +326,9 @@ export default function Home() {
       content: (
         <div>
           <h2 className="text-2xl font-mono font-semibold mb-4">
-            Hacking and General Reminders
+          <svg className="inline -translate-y-[0.1rem]" width="8" height="8" xmlns="http://www.w3.org/2000/svg">
+              <rect width="8" height="8" className="fill-[#0057FF]" />
+            </svg> Hacking and General Reminders
           </h2>
           <ul className="list-disc space-y-2 ml-4">
             <li>
@@ -353,7 +361,9 @@ export default function Home() {
       content: (
         <div>
           <h2 className="text-2xl font-mono font-semibold mb-4">
-            Project Submission Guidelines
+          <svg className="inline -translate-y-[0.1rem]" width="8" height="8" xmlns="http://www.w3.org/2000/svg">
+              <rect width="8" height="8" className="fill-[#0057FF]" />
+            </svg> Project Submission Guidelines
           </h2>
           <h3 className="text-xl font-semibold mt-4 mb-2">
             Using Marchup for Submission
@@ -371,8 +381,8 @@ export default function Home() {
             , a platform many of you may not have used before. It functions like a LinkedIn
             for high schoolers and will serve as the hub for all project submissions.
           </p>
-          <h3 className="text-lg font-semibold mt-4">
-            Steps to Submit Your Project:
+          <h3 className="text-xl font-semibold mt-4">
+            How to Submit Your Project
           </h3>
           <ol className="list-decimal list-inside my-2 space-y-2">
             <li>
@@ -389,7 +399,6 @@ export default function Home() {
             </li>
             <li>
               Find the{" "}
-              <strong>
                 <a
                   href="https://marchup.net/s/viking-hacks-2025/space/space/child-spaces"
                   className="text-blue-500 underline"
@@ -398,7 +407,7 @@ export default function Home() {
                 >
                   Viking Hacks 2025
                 </a>
-              </strong>{" "}
+                {" "}
               space.
             </li>
             <li>
@@ -415,19 +424,21 @@ export default function Home() {
           <h3 className="text-xl font-semibold mt-6 mb-2">
             Naming Your Child Space
           </h3>
+          <div className="flex flex-col justify-start gap-1"> 
           <p>
-            When creating your child space, you <strong>must</strong> use this format:
-          </p>
-          <p className="bg-gray-100 p-2 rounded-md font-mono text-sm">
+            When creating your child space, you <strong>must</strong> use this format: {" "}
+            <span className="bg-gray-100 px-2 py-1 rounded-md text-sm font-mono">
             TEAM NAME - TRACK NAME - TABLE NUMBER
+          </span>
           </p>
-          <p>
+          <p className="">
             <strong>Example:</strong> <code>Sunrise - Health/Wellness - 5</code>
           </p>
+          </div>
           <h3 className="text-xl font-semibold mt-6 mb-2">
             Team Member Requirements
           </h3>
-          <p className="text-red-600 font-bold mb-10">
+          <p className="text-red-600 mb-10">
             All members of your team must sign up and be part of the child space.
             Otherwise, they will be ineligible for prizes.
           </p>
@@ -438,12 +449,15 @@ export default function Home() {
       title: 'Awards',
       content: (
         <div>
-          <h2 className="text-2xl font-mono font-semibold mb-4">Awards</h2>
+          <h2 className="text-2xl font-mono font-semibold mb-4">
+          <svg className="inline -translate-y-[0.1rem]" width="8" height="8" xmlns="http://www.w3.org/2000/svg">
+              <rect width="8" height="8" className="fill-[#0057FF]" />
+            </svg> Awards</h2>
           <p>
-            <ul className="space-y-10">
+            <ul className="space-y-5">
               <li className="flex flex-col gap-2">
                 <h1 className="flex gap-2 font-mono items-center">
-                  <p className="bg-orange-400 px-2 py-[0.1rem] font-light">
+                  <p className="bg-[#0057FF] text-white px-2 py-[0.1rem] font-light">
                     Grand Prize
                   </p>
                   <p className="text-lg font-bold">
