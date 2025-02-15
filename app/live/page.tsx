@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect } from 'react';
 import hljs from 'highlight.js';
-import 'highlight.js/styles/github-dark.css'; // Import a theme for styling
+import 'highlight.js/styles/panda-syntax-light.css';
 import { useRouter, useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import { Balancer } from 'react-wrap-balancer';
@@ -181,7 +181,7 @@ export default function Home() {
 
   const highlightedCode = (code: string, language: string = "python") => {
     return (
-      <pre className="p-4 overflow-x-auto bg-gray-900 text-white rounded-lg">
+      <pre className="p-4 overflow-x-auto bg-gray-50 text-black rounded-lg">
         <code
           dangerouslySetInnerHTML={{
             __html: hljs.highlight(code, { language }).value,
@@ -310,6 +310,9 @@ export default function Home() {
           <h3 className="text-xl font-semibold mt-6 mb-2">
             OpenAI Example
           </h3>
+          <p className="my-1 tracking-tight">
+            This is an example for how to use an OpenAI API key.
+          </p>
           <text>{highlightedCode(`from openai import OpenAI
 
 client = OpenAI(api_key="...")
