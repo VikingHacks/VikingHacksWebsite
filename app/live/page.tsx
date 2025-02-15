@@ -1,10 +1,11 @@
 "use client"
 import { useState, useEffect } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
+import Image from 'next/image';
 import { Balancer } from 'react-wrap-balancer';
 
 const TrackList = {
-  'Ed Tech': {
+  'Health/Wellbeing': {
     Description:
       'Technology plays a crucial role in improving healthcare, mental wellness, and overall well-being. For this track, develop software that enhances access to healthcare, promotes healthy lifestyles, or address gaps in wellness and accessibility. The top projects in this track will use unique solutions to tackle common challenges in a new and impactful way.',
     Guidelines: [
@@ -13,9 +14,9 @@ const TrackList = {
       "Simply repackaging existing tools (e.g., ChatGPT wrappers) will not score as well.",
     ],
   },
-  'Health/Wellbeing': {
+  'Educational Tech': {
     Description:
-      'Education has changed a lot in the past few years with Gen. AI hitting the market. This new technology has the potential to make learning more engaging, accessible, and effective. For this track, develop software that enhances education, whether by improving learning experiences, increasing accessibility, or addressing gaps in traditional educational methods.',
+      'Education has changed a lot in the past few years with Generative AI hitting the market. This new technology has the potential to make learning more engaging, accessible, and effective. For this track, develop software that enhances education, whether by improving learning experiences, increasing accessibility, or addressing gaps in traditional educational methods.',
     Guidelines: [
       "Projects should focus on improving education, learning accessibility, or skill development.",
       "Innovation is key. Judges will give higher scores to solutions that build off uncommon approaches, unique APIs, or novel educational techniques rather than repackaging existing tools (e.g., basic chatbot tutors)",
@@ -160,6 +161,14 @@ export default function Home() {
     setOpenTrack((prev) => (prev === question ? null : question));
   };
 
+  const kbdText = (text: string) => {
+    return (
+      <kbd className="rounded-lg bg-gray-100 px-[0.3rem] py-[0.15rem] text-pink-500">
+        {text}
+      </kbd>
+    );
+  };
+
   const tabs = [
     {
       title: 'Intro',
@@ -199,7 +208,7 @@ export default function Home() {
                   onClick={() => toggleTrack(TrackName)}
                 >
                   <div className="flex justify-between items-center w-full">
-                    <h1 className="font-mono tracking-tight font-semibold text-lg">
+                    <h1 className="font-mono tracking-tight text-lg">
                       {TrackName}
                     </h1>
                     <svg
@@ -220,7 +229,7 @@ export default function Home() {
                   </div>
                   <div className={`flex flex-col items-start ${isOpen ? "block" : "hidden"}`}>
                     <h3 className="text-left mb-2">{Description}</h3>
-                    <h2 className="font-mono rounded-full border px-2 border-blue-500">Guidelines</h2>
+                    <h2 className="underline underline-offset-4 decoration-blue-500 decoration-1">Rules</h2>
                     <ul className="list-disc ml-4 text-left">
                       {GuidelineList}
                     </ul>
@@ -240,33 +249,39 @@ export default function Home() {
             Setup, WiFi, and Apps
           </h2>
           <p>
-            To get started, connect to the event WiFi: <strong>FUSDGuest</strong>
+            To get started, connect to the event WiFi: {kbdText("FUSDGuest")}
           </p>
-          <h3 className="text-xl font-semibold mt-6 mb-2">
-            OpenAI API Keys
-          </h3>
-          <p>
-            We are providing <strong>5 OpenAI API keys</strong> for participants to use.
-            These keys are shared, so at high usage times (like judging), there may be rate
-            limits. We recommend recording a demo while your project is working.
-          </p>
-          <ul className="list-disc list-inside my-2">
-            <li>
-              <code>sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code>
-            </li>
-            <li>
-              <code>sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code>
-            </li>
-            <li>
-              <code>sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code>
-            </li>
-            <li>
-              <code>sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code>
-            </li>
-            <li>
-              <code>sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</code>
-            </li>
-          </ul>
+          <h1 className="font-semibold text-xl mt-6">Free API Keys</h1>
+          <div className="p-3 border">
+            <h3 className="text-xl mb-2 flex flex-col gap-1">
+              <Image src="/OPENAILOGO.png" alt="OpenAI Logo" width={1280} height={348} style={{
+                width: '10%',
+                height: 'auto',
+              }} />
+            </h3>
+            <p>
+              We are providing <strong>5 OpenAI API keys</strong> for participants to use.
+              These keys are shared, so at high usage times (like judging), there may be rate
+              limits. We recommend recording a demo while your project is working.
+            </p>
+            <ul className="list-decimal list-inside my-2 space-y-1">
+              <li>
+                {kbdText("sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")}
+              </li>
+              <li>
+                {kbdText("sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")}
+              </li>
+              <li>
+                {kbdText("sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")}
+              </li>
+              <li>
+                {kbdText("sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")}
+              </li>
+              <li>
+                {kbdText("sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")}
+              </li>
+            </ul>
+          </div>
           <p className="font-bold text-red-600">
             If you face any issues with the API keys, reach out to an organizer immediately.
           </p>
@@ -531,7 +546,7 @@ export default function Home() {
         </div>
 
         {/* Tabs Section */}
-        <div className="bg-white mt-20">
+        <div className="bg-white mt-20 mb-20">
           <div className="border-b">
             <nav className="flex justify-evenly overflow-x-auto">
               {tabs.map((tab, index) => (
@@ -540,7 +555,7 @@ export default function Home() {
                   onClick={() => handleTabChange(index)}
                   className={`grow px-4 py-2 font-semibold text-sm font-mono uppercase border-b-2 border-transparent focus:outline-none ${
                     activeTab === index
-                      ? "border-b-2 border-blue-500 text-blue-500"
+                      ? "border-b-2 !border-blue-500 text-blue-500"
                       : "text-gray-600 hover:text-blue-500"
                   }`}
                 >

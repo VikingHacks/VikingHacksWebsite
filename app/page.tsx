@@ -33,6 +33,10 @@ const ScheduleList = {
     Description: 'Fuel up for the second half of hacking.',
     Time: '12:30pm',
   },
+  'Guest Speaker': {
+    Description: 'Dr. Shalini, AI expert and strategist, will lead a 30-minute workshop on the future of AI and innovation.',
+    Time: '3:15pm',
+  },
   'Project Submission Support Begins': {
     Description: 'Organizers help teams finalize submissions.',
     Time: '4:00pm',
@@ -44,6 +48,10 @@ const ScheduleList = {
   'Dinner Service Starts': {
     Description: 'Participants grab dinner while waiting.',
     Time: '6:00pm',
+  },
+  'Judging Starts': {
+    Description: 'Judges begin evaluations of all projects.',
+    Time: '6:30pm',
   },
   'Judging Ends': {
     Description: 'Final project evaluations complete.',
