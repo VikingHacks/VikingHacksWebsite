@@ -315,7 +315,6 @@ export default function Home() {
 client = OpenAI(api_key="...")
 
 def test_openai_api():
-
     try:
         response = client.chat.completions.create(model="gpt-4o",
         messages=[{"role": "system", "content": "You are a helpful assistant."},
