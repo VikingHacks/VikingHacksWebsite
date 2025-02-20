@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import FAQ from "../components/FAQ";
 import Sponsors from "../components/Sponsors"; 
+import Winners from "../components/Winners";
 // import ScheduleItem from "../components/ScheduleItem";
 import { Balancer } from "react-wrap-balancer";
 import DottedLine from "../components/DottedLine";
@@ -80,6 +81,48 @@ const FAQList = {
     answer: "Viking Hacks is completely free for all participants, thanks to our sponsors."
   }
 }
+
+const EducationalTechnology = [
+  { 
+    name: "Presen-Station", 
+    people: "Vineel Valmiki, Anay Agrawal", 
+    place: "2nd"
+  },
+  { 
+    name: "Focus Planner", 
+    people: "Akilan Purushothaman, Vishv Dhanraj", 
+    place: "1st"
+  },
+];
+
+const Healthcare = [
+  { 
+    name: "AIOralHealth", 
+    people: "Aryan Anumala, Atharv Gupta", 
+    place: "2nd"
+  },
+  { 
+    name: "MedX", 
+    people: "Savir Dillikar", 
+    place: "1st"
+  },
+];
+
+const LowNoCode = [
+  { 
+    name: "Vocalizer", 
+    people: "Sai Shri Sujitha Nallapati, Callista Sebastian", 
+    place: "1st"
+  },
+];
+
+const GrandWinner = [
+  { 
+    name: "Diet Planner", 
+    people: "Shashwath Dinesh", 
+    place: "None"
+  },
+];
 
 const partners = [
   { 
@@ -164,10 +207,12 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col lg:flex-row my-20 justify-between lg:items-center">
             <div className="flex flex-col text-black">
-              <h1 className="tracking-[-0.07em] font-medium text-[9vw] sm:text-[8vw] lg:text-[5.5vw] leading-[1.1]">Viking Hacks is here.</h1>
+              <h1 className="tracking-[-0.07em] font-medium text-[9vw] sm:text-[8vw] lg:text-[5.5vw] leading-[1.1]">Viking Hacks was here.</h1>
               <text className="font-mono text-[4vw] sm:text-[2.5vw] lg:text-[1.5vw] uppercase">February 15th - Fremont, CA.</text>
             </div>
-            <Link href={"/register"} target={"_self"} className="group mt-5 lg:mt-0 flex font-mono items-center justify-center gap-x-2 text-white bg-[rgb(0,87,255)] px-10 md:px-32 text-2xl py-1 h-24">
+            <Link href={"/register"} target={"_self"} className="
+            grayscale opacity-50 hover:cursor-not-allowed active:pointer-events-none
+            group mt-5 lg:mt-0 flex font-mono items-center justify-center gap-x-2 text-white bg-[rgb(0,87,255)] px-10 md:px-32 text-2xl py-1 h-24">
               <div className="flex flex-col">
                 <div className="flex items-center justify-center">
                   <span className="font-mono text-xl lg:text-2xl uppercase mr-2">Register Now</span>
@@ -241,8 +286,12 @@ export default function HomePage() {
           {/* Prizes preview */}
           <div className="my-20">
           </div>
+          <section className="text-black py-20 w-full">
+            <span className="text-[10vw] md:text-[4vw] font-medium leading-none tracking-tighter">Winners</span>
+            <Winners partners={EducationalTechnology} diamond={Healthcare} gold={LowNoCode} supporters={GrandWinner} />
+          </section>
           {/* FAQ section */}
-          <div className="flex flex-col md:flex-row my-20 md:mt-40 w-full">
+          <div className="flex flex-col md:flex-row my-20 md:mt-10 w-full">
             {/* Sticky FAQ section */}
             <div className="sticky-container block w-full lg:min-w-[40%] lg:w-[40%]">
               <div className="sticky top-32 flex flex-col text-black gap-5">

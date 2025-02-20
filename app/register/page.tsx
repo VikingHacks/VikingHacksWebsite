@@ -14,29 +14,29 @@ import Footer from "../../components/Footer";
 import { AiFillMail } from 'react-icons/ai';
 
 const ComingSoon: React.FC = () => {
-  const [isLoading, setIsLoading] = useState<boolean>(true);
-  const iframeRef = useRef<HTMLIFrameElement | null>(null);
+  // const [isLoading, setIsLoading] = useState<boolean>(true);
+  // const iframeRef = useRef<HTMLIFrameElement | null>(null);
 
-  useEffect(() => {
-    const handleResizeMessage = (event: MessageEvent) => {
-      // Ensure the message is from Airtable
-      if (typeof event.data === "object" && event.origin.includes("airtable.com")) {
-        const { type, payload } = event.data as { type: string; payload: { height: number } };
+  // useEffect(() => {
+  //   const handleResizeMessage = (event: MessageEvent) => {
+  //     // Ensure the message is from Airtable
+  //     if (typeof event.data === "object" && event.origin.includes("airtable.com")) {
+  //       const { type, payload } = event.data as { type: string; payload: { height: number } };
 
-        // Check if the message is about resizing the iframe
-        if (type === "embedFrameResize" && iframeRef.current) {
-          iframeRef.current.style.height = `${payload.height}px`;
-        }
-      }
-    };
+  //       // Check if the message is about resizing the iframe
+  //       if (type === "embedFrameResize" && iframeRef.current) {
+  //         iframeRef.current.style.height = `${payload.height}px`;
+  //       }
+  //     }
+  //   };
 
-    // Listen for messages from the Airtable iframe
-    window.addEventListener("message", handleResizeMessage);
+  //   // Listen for messages from the Airtable iframe
+  //   window.addEventListener("message", handleResizeMessage);
 
-    return () => {
-      window.removeEventListener("message", handleResizeMessage);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("message", handleResizeMessage);
+  //   };
+  // }, []);
   
   return (
     <div className="min-h-screen">
@@ -81,8 +81,12 @@ const ComingSoon: React.FC = () => {
         </h2>
       </main> */}
 
-      {/* <Widget id="zNPxh3gU" style={{width: '80%', height: '600px'}} className="Viking Hacks Registration Form" /> */}
-      <div className="">
+      <div className="flex flex-col justify-center items-center text-black h-[70vh]">
+        <h1 className="text-[4vh] tracking-tighter">Registration is closed</h1>
+        <h2>Thank you for attending.</h2>
+      </div>
+
+      {/* <div className="">
         {isLoading && (
           <div className="absolute top-0 left-0 w-full h-full flex flex-col gap-2 justify-center items-center bg-gray-100 z-10">
             <h1 className="text-xl text-black font-mono">Please wait</h1>
@@ -96,7 +100,7 @@ const ComingSoon: React.FC = () => {
           frameBorder="0"
           onLoad={() => setIsLoading(false)}
         ></iframe>
-      </div>
+      </div> */}
 
       {/* <Footer /> */}
     </div>
