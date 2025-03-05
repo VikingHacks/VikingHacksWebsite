@@ -98,7 +98,7 @@ const EducationalTechnology = [
 const Healthcare = [
   { 
     name: "AIOralHealth", 
-    people: "Aryan Anumala, Atharv Gupta", 
+    people: "Aryan Anumula, Atharv Gupta", 
     place: "2nd"
   },
   { 
@@ -113,6 +113,22 @@ const LowNoCode = [
     name: "Vocalizer", 
     people: "Sai Shri Sujitha Nallapati, Callista Sebastian", 
     place: "1st"
+  },
+];
+
+const SFBUMomentum = [
+  { 
+    name: "EduSketch AI", 
+    people: "Hoang Dang, Gale Lekok, Pranay Rishi Nalem",
+    place: "None"
+  },
+];
+
+const LaunchAward = [
+  { 
+    name: "Doze Watch MVP", 
+    people: "Aayan Singh", 
+    place: "None"
   },
 ];
 
@@ -288,7 +304,7 @@ export default function HomePage() {
           </div>
           <section className="text-black py-20 w-full">
             <span className="text-[10vw] md:text-[4vw] font-medium leading-none tracking-tighter">Winners</span>
-            <Winners partners={EducationalTechnology} diamond={Healthcare} gold={LowNoCode} supporters={GrandWinner} />
+            <Winners partners={EducationalTechnology} diamond={Healthcare} gold={LowNoCode} supporters={GrandWinner} SFBU={SFBUMomentum} LaunchX={LaunchAward} />
           </section>
           {/* FAQ section */}
           <div className="flex flex-col md:flex-row my-20 md:mt-10 w-full">
