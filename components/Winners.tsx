@@ -12,9 +12,11 @@ type SponsorsProps = {
   diamond: Sponsor[]; // Diamond sponsors
   gold: Sponsor[]; // Gold sponsors
   supporters: Sponsor[]; // Gold sponsors
+  SFBUAward: Sponsor[]; // Gold sponsors
+  LaunchX: Sponsor[]; // Gold sponsors
 };
 
-const Winners: React.FC<SponsorsProps> = ({ partners, diamond, gold, supporters, SFBU, LaunchX }) => {
+const Winners: React.FC<SponsorsProps> = ({ partners, diamond, gold, supporters, SFBUAward, LaunchX}) => {
   // Section rendering helper
   const WinnerSection = ({
     title,
@@ -77,7 +79,7 @@ const Winners: React.FC<SponsorsProps> = ({ partners, diamond, gold, supporters,
         {/* Gold Section */}
         <WinnerSection
           title="SFBU Momentum Award"
-          sponsors={SFBU}
+          sponsors={SFBUAward}
           gridCols="grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
         />
 

@@ -304,7 +304,7 @@ export default function HomePage() {
           </div>
           <section className="text-black py-20 w-full">
             <span className="text-[10vw] md:text-[4vw] font-medium leading-none tracking-tighter">Winners</span>
-            <Winners partners={EducationalTechnology} diamond={Healthcare} gold={LowNoCode} supporters={GrandWinner} SFBU={SFBUMomentum} LaunchX={LaunchAward} />
+            <Winners partners={EducationalTechnology} diamond={Healthcare} gold={LowNoCode} supporters={GrandWinner} SFBUAward={SFBUMomentum} LaunchX={LaunchAward} />
           </section>
           {/* FAQ section */}
           <div className="flex flex-col md:flex-row my-20 md:mt-10 w-full">
