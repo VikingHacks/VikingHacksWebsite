@@ -90,7 +90,7 @@ const EducationalTechnology = [
   },
   { 
     name: "Focus Planner", 
-    people: "Akilan Purushothaman, Vishv Dhanraj", 
+    people: "Akilan Purushothaman, Vishv Dhanraj, Arron Chang, Aiden Jiang, Alex Li", 
     place: "1st"
   },
 ];
@@ -111,7 +111,7 @@ const Healthcare = [
 const LowNoCode = [
   { 
     name: "Vocalizer", 
-    people: "Sai Shri Sujitha Nallapati, Callista Sebastian", 
+    people: "Sai Shri Sujitha Nallapati, Callista Sebastian, Tayla Wong, Chetna Varada", 
     place: "1st"
   },
 ];
