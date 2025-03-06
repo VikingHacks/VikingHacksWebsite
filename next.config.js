@@ -42,8 +42,14 @@ module.exports = {
       },
 
       {
-        source: '/photos',
+        source: '/photos24',
         destination: 'https://photos.app.goo.gl/xbdtsegKgpsz1Ytd9',
+        permanent: true,
+      },
+
+      {
+        source: '/photos25',
+        destination: 'https://photos.app.goo.gl/Z1Zj6GMDCxH7odPj8',
         permanent: true,
       },
     ]
