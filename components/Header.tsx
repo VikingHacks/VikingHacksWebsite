@@ -92,7 +92,7 @@ export default function Header() {
                 {Object.entries(navItems).map(([path, { name }]) => {
                     return (
                         <Link key={path} href={path} target={"_self"} className="
-                        grayscale opacity-50 hover:cursor-not-allowed active:pointer-events-none
+                       
                         group
                         flex
                         items-center

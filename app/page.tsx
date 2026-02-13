@@ -35,7 +35,7 @@ const ScheduleList = {
     Time: '12:30pm',
   },
   'Guest Speaker': {
-    Description: 'Dr. Shalini, AI expert and strategist, will lead a 30-minute workshop on the future of AI and innovation.',
+    Description: 'TBD.',
     Time: '3:15pm',
   },
   'Project Submission Support Begins': {
@@ -82,124 +82,124 @@ const FAQList = {
   }
 }
 
-const EducationalTechnology = [
-  { 
-    name: "Presen-Station", 
-    people: "Vineel Valmiki, Anay Agrawal", 
-    place: "2nd"
-  },
-  { 
-    name: "Focus Planner", 
-    people: "Akilan Purushothaman, Vishv Dhanraj, Arron Chang, Aiden Jiang, Alex Li", 
-    place: "1st"
-  },
+// const EducationalTechnology = [
+//   { 
+//     name: "Presen-Station", 
+//     people: "Vineel Valmiki, Anay Agrawal", 
+//     place: "2nd"
+//   },
+//   { 
+//     name: "Focus Planner", 
+//     people: "Akilan Purushothaman, Vishv Dhanraj, Arron Chang, Aiden Jiang, Alex Li", 
+//     place: "1st"
+//   },
+// ];
+
+// const Healthcare = [
+//   { 
+//     name: "AIOralHealth", 
+//     people: "Aryan Anumula, Atharv Gupta", 
+//     place: "2nd"
+//   },
+//   { 
+//     name: "MedX", 
+//     people: "Savir Dillikar", 
+//     place: "1st"
+//   },
+// ];
+
+// const LowNoCode = [
+//   { 
+//     name: "Vocalizer", 
+//     people: "Sai Shri Sujitha Nallapati, Callista Sebastian, Tayla Wong, Chetna Varada", 
+//     place: "1st"
+//   },
+// ];
+
+// const SFBUMomentum = [
+//   { 
+//     name: "EduSketch AI", 
+//     people: "Hoang Dang, Gale Lekok, Pranay Rishi Nalem",
+//     place: "None"
+//   },
+// ];
+
+// const LaunchAward = [
+//   { 
+//     name: "Doze Watch MVP", 
+//     people: "Aayan Singh", 
+//     place: "None"
+//   },
+// ];
+
+// const GrandWinner = [
+//   { 
+//     name: "Diet Planner", 
+//     people: "Shashwath Dinesh", 
+//     place: "None"
+//   },
+// ];
+
+const partners: { name: string; logo: string; link: string; }[] = [
+  // { 
+  //   name: "SFBU", 
+  //   logo: "/sponsors/logos/SFBU_F.png", 
+  //   link: "https://sfbu.edu"
+  // },
+  // { 
+  //   name: "LaunchX", 
+  //   logo: "/sponsors/logos/LAUNCHX_F.png", 
+  //   link: "https://launchx.com"
+  // },
 ];
 
-const Healthcare = [
-  { 
-    name: "AIOralHealth", 
-    people: "Aryan Anumula, Atharv Gupta", 
-    place: "2nd"
-  },
-  { 
-    name: "MedX", 
-    people: "Savir Dillikar", 
-    place: "1st"
-  },
+const diamond: { name: string; logo: string; link: string; }[] = [
+  // { 
+  //   name: "Palo Alto Networks", 
+  //   logo: "/sponsors/logos/PAN_F.png", 
+  //   link: "https://www.paloaltonetworks.com/"
+  // },
+  // { 
+  //   name: "Marchup", 
+  //   logo: "/sponsors/logos/MARCHUP_F.png", 
+  //   link: "https://marchup.net/"
+  // },
+  // { 
+  //   name: "Berbawy Makers", 
+  //   logo: "/sponsors/logos/BERBAWY_F.png", 
+  //   link: "https://berbawymakers.com/"
+  // },
 ];
 
-const LowNoCode = [
-  { 
-    name: "Vocalizer", 
-    people: "Sai Shri Sujitha Nallapati, Callista Sebastian, Tayla Wong, Chetna Varada", 
-    place: "1st"
-  },
+const gold: { name: string; logo: string; link: string; }[] = [
+  // { 
+  //   name: "Replit", 
+  //   logo: "/sponsors/logos/REPLIT_F.png", 
+  //   link: "https://replit.com/"
+  // },
+  // { 
+  //   name: "Keep the Bay Beautiful", 
+  //   logo: "/sponsors/logos/KTBB_F.png", 
+  //   link: "https://keepbayareabeautiful.wixsite.com/bayarea"
+  // },
+  // { 
+  //   name: "Empyrean Technologies", 
+  //   logo: "/sponsors/logos/EMPYREAN_F.png", 
+  //   link: "https://www.empyrean-tech.com/"
+  // },
 ];
 
-const SFBUMomentum = [
-  { 
-    name: "EduSketch AI", 
-    people: "Hoang Dang, Gale Lekok, Pranay Rishi Nalem",
-    place: "None"
-  },
-];
-
-const LaunchAward = [
-  { 
-    name: "Doze Watch MVP", 
-    people: "Aayan Singh", 
-    place: "None"
-  },
-];
-
-const GrandWinner = [
-  { 
-    name: "Diet Planner", 
-    people: "Shashwath Dinesh", 
-    place: "None"
-  },
-];
-
-const partners = [
-  { 
-    name: "SFBU", 
-    logo: "/sponsors/logos/SFBU_F.png", 
-    link: "https://sfbu.edu"
-  },
-  { 
-    name: "LaunchX", 
-    logo: "/sponsors/logos/LAUNCHX_F.png", 
-    link: "https://launchx.com"
-  },
-];
-
-const diamond = [
-  { 
-    name: "Palo Alto Networks", 
-    logo: "/sponsors/logos/PAN_F.png", 
-    link: "https://www.paloaltonetworks.com/"
-  },
-  { 
-    name: "Marchup", 
-    logo: "/sponsors/logos/MARCHUP_F.png", 
-    link: "https://marchup.net/"
-  },
-  { 
-    name: "Berbawy Makers", 
-    logo: "/sponsors/logos/BERBAWY_F.png", 
-    link: "https://berbawymakers.com/"
-  },
-];
-
-const gold = [
-  { 
-    name: "Replit", 
-    logo: "/sponsors/logos/REPLIT_F.png", 
-    link: "https://replit.com/"
-  },
-  { 
-    name: "Keep the Bay Beautiful", 
-    logo: "/sponsors/logos/KTBB_F.png", 
-    link: "https://keepbayareabeautiful.wixsite.com/bayarea"
-  },
-  { 
-    name: "Empyrean Technologies", 
-    logo: "/sponsors/logos/EMPYREAN_F.png", 
-    link: "https://www.empyrean-tech.com/"
-  },
-];
-
-const supporters = [
-  { 
-    name: ".xyz", 
-    logo: "/sponsors/logos/XYZ_F.png", 
-    link: "https://gen.xyz"
-  },
-  { 
-    name: "AoPS", 
-    logo: "/sponsors/logos/AOPS_F.png", 
-    link: "https://artofproblemsolving.com/"
-  },
+const supporters: { name: string; logo: string; link: string; }[] = [
+  // { 
+  //   name: ".xyz", 
+  //   logo: "/sponsors/logos/XYZ_F.png", 
+  //   link: "https://gen.xyz"
+  // },
+  // { 
+  //   name: "AoPS", 
+  //   logo: "/sponsors/logos/AOPS_F.png", 
+  //   link: "https://artofproblemsolving.com/"
+  // },
 ];
 
 export default function HomePage() {
@@ -223,20 +223,29 @@ export default function HomePage() {
           </div>
           <div className="flex flex-col lg:flex-row my-20 justify-between lg:items-center">
             <div className="flex flex-col text-black">
-              <h1 className="tracking-[-0.07em] font-medium text-[9vw] sm:text-[8vw] lg:text-[5.5vw] leading-[1.1]">Viking Hacks was here.</h1>
-              <text className="font-mono text-[4vw] sm:text-[2.5vw] lg:text-[1.5vw] uppercase">February 15th - Fremont, CA.</text>
+              <h1 className="tracking-[-0.07em] font-medium text-[9vw] sm:text-[8vw] lg:text-[5.5vw] leading-[1.1]">Viking Hacks is here.</h1>
+              <text className="font-mono text-[4vw] sm:text-[2.5vw] lg:text-[1.5vw] uppercase">March 28th - Fremont, CA.</text>
             </div>
-            <Link href={"/register"} target={"_self"} className="
-            grayscale opacity-50 hover:cursor-not-allowed active:pointer-events-none
-            group mt-5 lg:mt-0 flex font-mono items-center justify-center gap-x-2 text-white bg-[rgb(0,87,255)] px-10 md:px-32 text-2xl py-1 h-24">
+            <a
+              href="https://airtable.com/embed/appGZCdm9bgeeAuH2/pagZAfSnwtzoHxkuo/form"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="
+                group mt-5 lg:mt-0 flex font-mono items-center justify-center gap-x-2
+                text-white bg-[rgb(0,87,255)] px-10 md:px-32 text-2xl py-1 h-24
+              "
+            >
               <div className="flex flex-col">
                 <div className="flex items-center justify-center">
                   <span className="font-mono text-xl lg:text-2xl uppercase mr-2">Register Now</span>
-                  <svg className="group-hover:translate-x-1 transition-transform duration-150" aria-hidden="true" fill="none" height={21} viewBox="0 0 20 21" width={20} xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#arrow_icon)"><path clipRule="evenodd" d="M7.25 9.75H6.5V11.25H7.25H11.4393L9.96967 12.7197L9.43934 13.25L10.5 14.3107L11.0303 13.7803L13.7803 11.0303C14.0732 10.7374 14.0732 10.2626 13.7803 9.96967L11.0303 7.21967L10.5 6.68934L9.43934 7.75L9.96967 8.28033L11.4393 9.75H7.25ZM10 17C6.41015 17 3.5 14.0899 3.5 10.5C3.5 6.91015 6.41015 4 10 4C13.5899 4 16.5 6.91015 16.5 10.5C16.5 14.0899 13.5899 17 10 17ZM2 10.5C2 14.9183 5.58172 18.5 10 18.5C14.4183 18.5 18 14.9183 18 10.5C18 6.08172 14.4183 2.5 10 2.5C5.58172 2.5 2 6.08172 2 10.5Z" fill="currentColor" fillRule="evenodd"></path></g><defs><clipPath id="arrow_icon"><rect fill="currentColor" height="16" rx="0.25" width="16" x="2" y="2.5"></rect></clipPath></defs></svg>
+                  {/* arrow svg */}
                 </div>
-                <span className="block mt-1 font-mono font-medium leading-none text-center tracking-normal text-[14px] uppercase text-[#95B9FF]">completely free</span>
+                <span className="block mt-1 font-mono font-medium leading-none text-center tracking-normal text-[14px] uppercase text-[#95B9FF]">
+                  completely free
+                </span>
               </div>
-            </Link>
+            </a>
+
           </div>
           <div className="my-20">
             <span className="bg-black text-white font-mono py-[0.1rem] px-4 uppercase tracking-wider">About</span>
@@ -269,7 +278,7 @@ export default function HomePage() {
                     </span>
                   </div>
                 </span>
-                and innovators at Viking Hacks 2025 for a day of learning, creativity, and collaboration as we
+                and innovators at Viking Hacks 2026 for a day of learning, creativity, and collaboration as we
                 <span className="relative inline-block border-[1px] border-primaryColor ml-2 md:ml-0 mr-1 px-2 py-1 leading-[1.2]">
                   build solutions
                   {/* Blue underline decoration */}
@@ -302,10 +311,10 @@ export default function HomePage() {
           {/* Prizes preview */}
           <div className="my-20">
           </div>
-          <section className="text-black py-20 w-full">
+          {/* <section className="text-black py-20 w-full">
             <span className="text-[10vw] md:text-[4vw] font-medium leading-none tracking-tighter">Winners</span>
             <Winners partners={EducationalTechnology} diamond={Healthcare} gold={LowNoCode} supporters={GrandWinner} SFBUAward={SFBUMomentum} LaunchX={LaunchAward} />
-          </section>
+          </section> */}
           {/* FAQ section */}
           <div className="flex flex-col md:flex-row my-20 md:mt-10 w-full">
             {/* Sticky FAQ section */}
@@ -340,7 +349,7 @@ export default function HomePage() {
           </div>
           <section className="text-black py-20 w-full">
             <span className="text-[10vw] md:text-[4vw] font-medium leading-none tracking-tighter">Schedule</span>
-            <div className="w-full md:w-1/2 flex flex-col items-start">
+            {/* <div className="w-full md:w-1/2 flex flex-col items-start">
               <span className="mt-5 md:mt-10 mb-2 text-[8vw] md:text-[3vw] font-medium leading-none tracking-tighter">Important Note</span>
               <Balancer className="font-mono tracking-[0.02em] font-normal text-neutral-600 mb-8">
               During the hackathon, all updates, announcements, and essential resources will be posted on our live page. Whether it&apos;s schedule changes, API keys, important links, or project submission details, everything you need will be there. 
@@ -360,7 +369,7 @@ export default function HomePage() {
                         ">Live Site
                 <svg className="group-hover:translate-x-1 transition-transform duration-150" aria-hidden="true" fill="none" height={21} viewBox="0 0 20 21" width={20} xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#arrow_icon)"><path clipRule="evenodd" d="M7.25 9.75H6.5V11.25H7.25H11.4393L9.96967 12.7197L9.43934 13.25L10.5 14.3107L11.0303 13.7803L13.7803 11.0303C14.0732 10.7374 14.0732 10.2626 13.7803 9.96967L11.0303 7.21967L10.5 6.68934L9.43934 7.75L9.96967 8.28033L11.4393 9.75H7.25ZM10 17C6.41015 17 3.5 14.0899 3.5 10.5C3.5 6.91015 6.41015 4 10 4C13.5899 4 16.5 6.91015 16.5 10.5C16.5 14.0899 13.5899 17 10 17ZM2 10.5C2 14.9183 5.58172 18.5 10 18.5C14.4183 18.5 18 14.9183 18 10.5C18 6.08172 14.4183 2.5 10 2.5C5.58172 2.5 2 6.08172 2 10.5Z" fill="currentColor" fillRule="evenodd"></path></g><defs><clipPath id="arrow_icon"><rect fill="currentColor" height="16" rx="0.25" width="16" x="2" y="2.5"></rect></clipPath></defs></svg>
               </Link>
-            </div>
+            </div> */}
             <div className="hidden mt-14 md:grid grid-cols-4 font-normal">
               <h1 className="col-span-2 uppercase font-mono text-sm">Title</h1>
               <h1 className="col-span-1 uppercase font-mono text-sm">Details</h1>
