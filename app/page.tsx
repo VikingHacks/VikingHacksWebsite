@@ -154,6 +154,11 @@ const partners: { name: string; logo: string; link: string; }[] = [
 ];
 
 const diamond: { name: string; logo: string; link: string; }[] = [
+  {
+    name: "Retell AI",
+    logo: "/sponsors/logos/RETELL_F.png",
+    link: "https://www.retellai.com/"
+  }
   // { 
   //   name: "Palo Alto Networks", 
   //   logo: "/sponsors/logos/PAN_F.png", 
@@ -172,6 +177,16 @@ const diamond: { name: string; logo: string; link: string; }[] = [
 ];
 
 const gold: { name: string; logo: string; link: string; }[] = [
+  { 
+    name: "Berbawy Makers", 
+    logo: "/sponsors/logos/BERBAWY_F.png", 
+    link: "https://berbawymakers.com/"
+  },
+  { 
+    name: "MyClone", 
+    logo: "/sponsors/logos/MYCLONE_F.png", 
+    link: "https://www.myclone.is/"
+  },
   // { 
   //   name: "Replit", 
   //   logo: "/sponsors/logos/REPLIT_F.png", 
@@ -190,16 +205,16 @@ const gold: { name: string; logo: string; link: string; }[] = [
 ];
 
 const supporters: { name: string; logo: string; link: string; }[] = [
-  // { 
-  //   name: ".xyz", 
-  //   logo: "/sponsors/logos/XYZ_F.png", 
-  //   link: "https://gen.xyz"
-  // },
-  // { 
-  //   name: "AoPS", 
-  //   logo: "/sponsors/logos/AOPS_F.png", 
-  //   link: "https://artofproblemsolving.com/"
-  // },
+  { 
+    name: "Replit", 
+    logo: "/sponsors/logos/REPLIT_F.png", 
+    link: "https://replit.com/"
+  },
+  { 
+    name: "AoPS", 
+    logo: "/sponsors/logos/AOPS_F.png", 
+    link: "https://artofproblemsolving.com/"
+  },
 ];
 
 export default function HomePage() {
