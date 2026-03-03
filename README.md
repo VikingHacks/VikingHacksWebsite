@@ -1,4 +1,4 @@
-# [VikingHacks](https://vikinghacks.com) - The Hackathon of the Bay
+# [VikingHacks](https://vikinghacks.com) - The Hackathon of the Bay 
 
 2026 hackathon is planned to take place on March 28!
 
