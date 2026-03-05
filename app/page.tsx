@@ -176,6 +176,11 @@ const gold: { name: string; logo: string; link: string; }[] = [
     logo: "/sponsors/logos/REPLIT_F.png", 
     link: "https://replit.com/"
   },
+  { 
+    name: "Algoverse", 
+    logo: "/sponsors/logos/ALGO_F.png", 
+    link: "https://algoverseairesearch.org/"
+  },
 ];
 
 const supporters: { name: string; logo: string; link: string; }[] = [
