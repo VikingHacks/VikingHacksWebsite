@@ -64,6 +64,72 @@ const ScheduleList = {
   },
 };
 
+const JudgesList = [
+  {
+    name: "Atharv Deshmukh",
+    role: "Software Engineer, UIUC",
+    company: "Casca",
+    image: "/judges/Atharv.jpg", 
+    linkedin: "https://www.linkedin.com/in/atharv-deshmukh/", // Add URL here
+  },
+  {
+    name: "Mithil Patil",
+    role: "Software Engineer, GT",
+    company: "Casca",
+    image: "/judges/Mithil.jpg",
+    linkedin: "https://www.linkedin.com/in/mithil-patil/",
+  },
+  {
+    name: "Jimmy Wei",
+    role: "YC Startup",
+    company: "IncidentFox AI",
+    image: "/judges/jimmy.jpg",
+    linkedin: "https://www.linkedin.com/in/chiehmin-wei/",
+  },
+  {
+    name: "Long Yi",
+    role: "YC Startup",
+    company: "IncidentFox AI",
+    image: "/judges/longyi.jpg",
+    linkedin: "https://www.linkedin.com/in/long-yi-b221b2183/",
+  },
+  {
+    name: "Vignesh Ravichandran",
+    role: "AI Startup",
+    company: "MyClone AI",
+    image: "/judges/vignesh.jpg",
+    linkedin: "https://www.linkedin.com/in/vigneshravichandran28/",
+  },
+  {
+    name: "Divyank Shah",
+    role: "Software Engineer",
+    company: "Apple",
+    image: "/judges/divij.jpeg",
+    linkedin: "https://www.linkedin.com/in/divyank-shah/",
+  },
+  {
+    name: "Harsha Sanjeeva",
+    role: "Senior Engineer",
+    company: "Cisco",
+    image: "/judges/Harsha.jpeg",
+    linkedin: "https://www.linkedin.com/in/harshasanjeeva/",
+  },
+  {
+    name: "Nilesh Matai",
+    role: "Software Engineer",
+    company: "Retell AI",
+    image: "/judges/nilesh.jpeg",
+    linkedin: "https://www.linkedin.com/in/nileshmatai/",
+  },
+  {
+    name: "Prabir Vora",
+    role: "Technical Chief of Staff",
+    company: "Retell AI",
+    image: "/judges/prabir.jpeg",
+    linkedin: "https://www.linkedin.com/in/prabir-vora/",
+  },
+];
+
 const FAQList = {
   'What is Viking Hacks?': {
     answer: "Viking Hacks is Irvington High School's very own hackathon, designed to bring together students with a passion for technology and innovation."
@@ -82,75 +148,8 @@ const FAQList = {
   }
 }
 
-// const EducationalTechnology = [
-//   { 
-//     name: "Presen-Station", 
-//     people: "Vineel Valmiki, Anay Agrawal", 
-//     place: "2nd"
-//   },
-//   { 
-//     name: "Focus Planner", 
-//     people: "Akilan Purushothaman, Vishv Dhanraj, Arron Chang, Aiden Jiang, Alex Li", 
-//     place: "1st"
-//   },
-// ];
-
-// const Healthcare = [
-//   { 
-//     name: "AIOralHealth", 
-//     people: "Aryan Anumula, Atharv Gupta", 
-//     place: "2nd"
-//   },
-//   { 
-//     name: "MedX", 
-//     people: "Savir Dillikar", 
-//     place: "1st"
-//   },
-// ];
-
-// const LowNoCode = [
-//   { 
-//     name: "Vocalizer", 
-//     people: "Sai Shri Sujitha Nallapati, Callista Sebastian, Tayla Wong, Chetna Varada", 
-//     place: "1st"
-//   },
-// ];
-
-// const SFBUMomentum = [
-//   { 
-//     name: "EduSketch AI", 
-//     people: "Hoang Dang, Gale Lekok, Pranay Rishi Nalem",
-//     place: "None"
-//   },
-// ];
-
-// const LaunchAward = [
-//   { 
-//     name: "Doze Watch MVP", 
-//     people: "Aayan Singh", 
-//     place: "None"
-//   },
-// ];
-
-// const GrandWinner = [
-//   { 
-//     name: "Diet Planner", 
-//     people: "Shashwath Dinesh", 
-//     place: "None"
-//   },
-// ];
-
 const partners: { name: string; logo: string; link: string; }[] = [
-  // { 
-  //   name: "SFBU", 
-  //   logo: "/sponsors/logos/SFBU_F.png", 
-  //   link: "https://sfbu.edu"
-  // },
-  // { 
-  //   name: "LaunchX", 
-  //   logo: "/sponsors/logos/LAUNCHX_F.png", 
-  //   link: "https://launchx.com"
-  // },
+  // ... existing partners
 ];
 
 const diamond: { name: string; logo: string; link: string; }[] = [
@@ -159,21 +158,6 @@ const diamond: { name: string; logo: string; link: string; }[] = [
     logo: "/sponsors/logos/RETELL_F.png",
     link: "https://www.retellai.com/"
   }
-  // { 
-  //   name: "Palo Alto Networks", 
-  //   logo: "/sponsors/logos/PAN_F.png", 
-  //   link: "https://www.paloaltonetworks.com/"
-  // },
-  // { 
-  //   name: "Marchup", 
-  //   logo: "/sponsors/logos/MARCHUP_F.png", 
-  //   link: "https://marchup.net/"
-  // },
-  // { 
-  //   name: "Berbawy Makers", 
-  //   logo: "/sponsors/logos/BERBAWY_F.png", 
-  //   link: "https://berbawymakers.com/"
-  // },
 ];
 
 const gold: { name: string; logo: string; link: string; }[] = [
@@ -187,34 +171,25 @@ const gold: { name: string; logo: string; link: string; }[] = [
     logo: "/sponsors/logos/MYCLONE_F.png", 
     link: "https://www.myclone.is/"
   },
-  // { 
-  //   name: "Replit", 
-  //   logo: "/sponsors/logos/REPLIT_F.png", 
-  //   link: "https://replit.com/"
-  // },
-  // { 
-  //   name: "Keep the Bay Beautiful", 
-  //   logo: "/sponsors/logos/KTBB_F.png", 
-  //   link: "https://keepbayareabeautiful.wixsite.com/bayarea"
-  // },
-  // { 
-  //   name: "Empyrean Technologies", 
-  //   logo: "/sponsors/logos/EMPYREAN_F.png", 
-  //   link: "https://www.empyrean-tech.com/"
-  // },
-];
-
-const supporters: { name: string; logo: string; link: string; }[] = [
   { 
     name: "Replit", 
     logo: "/sponsors/logos/REPLIT_F.png", 
     link: "https://replit.com/"
   },
+];
+
+const supporters: { name: string; logo: string; link: string; }[] = [
+  
   { 
     name: "AoPS", 
     logo: "/sponsors/logos/AOPS_F.png", 
     link: "https://artofproblemsolving.com/"
   },
+  {
+    name: "xyz",
+    logo: "/sponsors/logos/XYZ_F.png",
+    link: "https://gen.xyz/"
+  }
 ];
 
 export default function HomePage() {
@@ -323,14 +298,7 @@ export default function HomePage() {
               </Balancer>
             </h2>
           </div>
-          {/* Prizes preview */}
-          <div className="my-20">
-          </div>
-          {/* <section className="text-black py-20 w-full">
-            <span className="text-[10vw] md:text-[4vw] font-medium leading-none tracking-tighter">Winners</span>
-            <Winners partners={EducationalTechnology} diamond={Healthcare} gold={LowNoCode} supporters={GrandWinner} SFBUAward={SFBUMomentum} LaunchX={LaunchAward} />
-          </section> */}
-          {/* FAQ section */}
+
           <div className="flex flex-col md:flex-row my-20 md:mt-10 w-full">
             {/* Sticky FAQ section */}
             <div className="sticky-container block w-full lg:min-w-[40%] lg:w-[40%]">
@@ -364,27 +332,6 @@ export default function HomePage() {
           </div>
           <section className="text-black py-20 w-full">
             <span className="text-[10vw] md:text-[4vw] font-medium leading-none tracking-tighter">Schedule</span>
-            {/* <div className="w-full md:w-1/2 flex flex-col items-start">
-              <span className="mt-5 md:mt-10 mb-2 text-[8vw] md:text-[3vw] font-medium leading-none tracking-tighter">Important Note</span>
-              <Balancer className="font-mono tracking-[0.02em] font-normal text-neutral-600 mb-8">
-              During the hackathon, all updates, announcements, and essential resources will be posted on our live page. Whether it&apos;s schedule changes, API keys, important links, or project submission details, everything you need will be there. 
-              </Balancer>
-              <Link href="/live" target={"_self"} className="
-                        font-mono font-light text-sm
-                        group
-                        flex
-                        items-center
-                        gap-x-2
-                        text-white
-                        bg-primaryColor
-                        px-5
-                        py-1
-                        h-10
-                        uppercase
-                        ">Live Site
-                <svg className="group-hover:translate-x-1 transition-transform duration-150" aria-hidden="true" fill="none" height={21} viewBox="0 0 20 21" width={20} xmlns="http://www.w3.org/2000/svg"><g clipPath="url(#arrow_icon)"><path clipRule="evenodd" d="M7.25 9.75H6.5V11.25H7.25H11.4393L9.96967 12.7197L9.43934 13.25L10.5 14.3107L11.0303 13.7803L13.7803 11.0303C14.0732 10.7374 14.0732 10.2626 13.7803 9.96967L11.0303 7.21967L10.5 6.68934L9.43934 7.75L9.96967 8.28033L11.4393 9.75H7.25ZM10 17C6.41015 17 3.5 14.0899 3.5 10.5C3.5 6.91015 6.41015 4 10 4C13.5899 4 16.5 6.91015 16.5 10.5C16.5 14.0899 13.5899 17 10 17ZM2 10.5C2 14.9183 5.58172 18.5 10 18.5C14.4183 18.5 18 14.9183 18 10.5C18 6.08172 14.4183 2.5 10 2.5C5.58172 2.5 2 6.08172 2 10.5Z" fill="currentColor" fillRule="evenodd"></path></g><defs><clipPath id="arrow_icon"><rect fill="currentColor" height="16" rx="0.25" width="16" x="2" y="2.5"></rect></clipPath></defs></svg>
-              </Link>
-            </div> */}
             <div className="hidden mt-14 md:grid grid-cols-4 font-normal">
               <h1 className="col-span-2 uppercase font-mono text-sm">Title</h1>
               <h1 className="col-span-1 uppercase font-mono text-sm">Details</h1>
@@ -406,8 +353,46 @@ export default function HomePage() {
               })}
             </div>
           </section>
+
+          
+
            <Sponsors partners={partners} diamond={diamond} gold={gold} supporters={supporters} />
-          {/* <div className="w-full h-screen"></div> */}
+
+           <section className="text-black py-10 w-full">
+            <span className="text-[10vw] md:text-[4vw] font-medium leading-none tracking-tighter">Judges</span>
+            <hr className="mt-4 border-t border-dashed border-blue-300" />
+            
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-6 gap-y-10 mt-10">
+              {JudgesList.map((judge, index) => (
+                <div key={index} className="flex flex-col group">
+                  <div className="relative w-full aspect-[4/5] bg-gray-100 mb-3 overflow-hidden border border-black">
+                    <Image 
+                      src={judge.image} 
+                      alt={judge.name}
+                      fill
+                      className="object-cover group-hover:grayscale-0 transition-all duration-500 ease-in-out"
+                    />
+                  </div>
+                  <div className="flex flex-col">
+                    <h3 className="text-lg md:text-xl font-medium tracking-tight leading-none">{judge.name}</h3>
+                    <div className="flex flex-col mt-2">
+                       <span className="font-mono text-xs md:text-sm text-[#0057FF] uppercase">{judge.company}</span>
+                       <span className="font-mono text-[10px] md:text-xs text-neutral-500 mb-2">{judge.role}</span>
+                       
+                       {/* LINKEDIN ICON BUTTON */}
+                       {judge.linkedin && (
+                         <Link href={judge.linkedin} target="_blank" rel="noopener noreferrer" className="text-black hover:text-[#0057FF] transition-colors w-fit">
+                           <svg fill="currentColor" width="18" height="18" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                             <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                           </svg>
+                         </Link>
+                       )}
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
         </div>
         <Footer />
       </main>
