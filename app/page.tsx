@@ -150,6 +150,11 @@ const FAQList = {
 
 const partners: { name: string; logo: string; link: string; }[] = [
   // ... existing partners
+  {
+    name: "Cracked",
+    logo: "/sponsors/logos/CRACKED_F.png",
+    link: "https://crackd.it/"
+  },
 ];
 
 const diamond: { name: string; logo: string; link: string; }[] = [
@@ -157,6 +162,11 @@ const diamond: { name: string; logo: string; link: string; }[] = [
     name: "Retell AI",
     logo: "/sponsors/logos/RETELL_F.png",
     link: "https://www.retellai.com/"
+  },
+  {
+    name: "SFBU",
+    logo: "/sponsors/logos/SFBU_F.png",
+    link: "https://www.sfbu.edu/"
   }
 ];
 
