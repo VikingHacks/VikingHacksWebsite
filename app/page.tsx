@@ -167,6 +167,11 @@ const diamond: { name: string; logo: string; link: string; }[] = [
     name: "SFBU",
     logo: "/sponsors/logos/SFBU_F.png",
     link: "https://www.sfbu.edu/"
+  },
+  {
+    name: "NordVPN",
+    logo: "/sponsors/logos/NORDVPN_F.png",
+    link: "https://nordvpn.com/"
   }
 ];
 
@@ -204,6 +209,21 @@ const supporters: { name: string; logo: string; link: string; }[] = [
     name: "xyz",
     logo: "/sponsors/logos/XYZ_F.png",
     link: "https://gen.xyz/"
+  },
+  {
+    name: "Incogni",
+    logo: "/sponsors/logos/INCOG_F.png",
+    link: "https://incogni.com/"
+  },
+  {
+    name: "Nexos AI",
+    logo: "/sponsors/logos/NEXOS_F.png",
+    link: "https://nexos.ai/"
+  },
+  {
+    name: "Saily",
+    logo: "/sponsors/logos/SAILY_F.png",
+    link: "https://saily.com/"
   }
 ];
 
