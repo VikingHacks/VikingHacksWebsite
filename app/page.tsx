@@ -64,6 +64,35 @@ const ScheduleList = {
   },
 };
 
+const leadOrganizers = [
+  "Max Zhang",
+  "Akshun Chinara",
+  "Poorv Patil",
+  "Angela Ye",
+  "Medha Srungarapu",
+  "Nidhi Riju",
+];
+
+const allOrganizers = [
+  "Aarav Agarwal",
+  "Achyut Haresh",
+  "Ahan Mourya",
+  "Akshun Chinara",
+  "Angela Ye",
+  "Divij Pathak",
+  "Eric Shen",
+  "Max Zhang",
+  "Medha Srungarapu",
+  "Neev Shah",
+  "Nidhi Riju",
+  "Nishtha Desai",
+  "Poorv Patil",
+  "Ridhiman Patwari",
+  "Samaya Shukla",
+  "Samhita Murthy",
+  "Shrivaas Thimma Udayakumar",
+];
+
 const JudgesList = [
   {
     name: "Atharv Deshmukh",
@@ -447,6 +476,32 @@ export default function HomePage() {
                   </div>
                 </div>
               ))}
+            </div>
+          </section>
+          <section className="text-black py-10 w-full">
+            <span className="text-[10vw] md:text-[4vw] font-medium leading-none tracking-tighter">Organizers</span>
+            <hr className="mt-4 border-t border-dashed border-blue-300" />
+
+            <div className="mt-8">
+              <span className="font-mono text-xs uppercase tracking-wider text-neutral-500">Lead Organizers</span>
+              <div className="flex flex-wrap gap-2 mt-3">
+                {leadOrganizers.map((name) => (
+                  <span key={name} className="font-mono text-sm px-3 py-1 border border-black text-black bg-white">
+                    {name}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-8">
+              <span className="font-mono text-xs uppercase tracking-wider text-neutral-500">Organizers</span>
+              <div className="flex flex-wrap gap-2 mt-3">
+                {allOrganizers.filter(name => !leadOrganizers.includes(name)).map((name) => (
+                  <span key={name} className="font-mono text-sm px-3 py-1 border border-dashed border-neutral-400 text-neutral-700">
+                    {name}
+                  </span>
+                ))}
+              </div>
             </div>
           </section>
         </div>
