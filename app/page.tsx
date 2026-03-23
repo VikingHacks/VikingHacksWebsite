@@ -128,6 +128,20 @@ const JudgesList = [
     image: "/judges/prabir.jpeg",
     linkedin: "https://www.linkedin.com/in/prabir-vora/",
   },
+  {
+    name: "Sangha Park",
+    role: "YC Startup",
+    company: "Light Anchor",
+    image: "/judges/sangha-park.jpeg",
+    linkedin: "https://www.linkedin.com/in/sanghaha/",
+  },
+  {
+    name: "Chase Kim",
+    role: "YC Startup",
+    company: "Light Anchor",
+    image: "/judges/chase-kim.jpeg",
+    linkedin: "https://www.linkedin.com/in/chasingjohnn/",
+  },
 ];
 
 const FAQList = {
