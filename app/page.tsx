@@ -142,6 +142,13 @@ const JudgesList = [
     image: "/judges/chase-kim.jpeg",
     linkedin: "https://www.linkedin.com/in/chasingjohnn/",
   },
+  {
+    name: "Anna Mouland",
+    role: "Startup Founder",
+    company: "Bequest Finance",
+    image: "/judges/anna-mouland.jpeg",
+    linkedin: "https://www.linkedin.com/in/annam44/",
+  },
 ];
 
 const FAQList = {
