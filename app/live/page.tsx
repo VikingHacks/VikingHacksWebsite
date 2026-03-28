@@ -317,19 +317,10 @@ export default function Home() {
               }} />
             </h3>
             <p>
-              We are providing <strong>6 OpenAI API keys</strong> for participants to use.
+              We are providing <strong>3 OpenAI API keys</strong> for participants to use.
             </p>
             <p className="text-sm text-gray-500 mb-1">Try each of these; some should work</p>
             <ul className="list-decimal list-inside mt-1 space-y-2">
-              <li>
-                {apiKeyText("sk-proj-qIX6MbC9NjhNNuK5hEk18zlDdYnW8qYOXrkY1OJnV1YJ7do5c2WS96lWH3ai8t0_HmjSKdzzmHT3B" + "lbkFJXePjaY--YaKUICUUpCChb5_fbMFSPi090-IfvkHc734hkPVMDHQr8qEbHMaOEuehTBU_N0WLYA")}
-              </li>
-              <li>
-                {apiKeyText("sk-proj-8ypJG1ijRizFvkTkVKHQv9nvxPioRtVD87AXouCg22eBViW6zqJf9IDBLLNdBjkTD5Uh0wl0jkT3B" + "lbkFJz6YPYDQlApZOSkcX4XND6hwkLwmGtHRMHwNXPSgAznKYqcOx89CDIlQ65MpM7x7i65KXZ9P1wA")}
-              </li>
-              <li>
-                {apiKeyText("sk-proj-V08dd-_7qkWqPO7XdUdh3va2ZFnCar4ux2ptrg3_iCnGC-9oqL58i7i_0lIe41InBEdxcrUdFvT3B" + "lbkFJed14Iki6x8ulL2UlnKosy8cauR23S3QTp-UwBkOcmQMdbhLcgXXffriTqkI0i3YsYddt3sGhwA")}
-              </li>
               <li>
                 {apiKeyText("sk-proj--McH4IESokJt8QNScd6rCAVphx0e3obgiFaAqesWwtphvl2KI3hwYPpFafLUKoDlpVFfhTEs1nT3B" + "lbkFJCW2LoVlckbfeEANpeWdi_iO5gxeGiFPFGv-olgjNt6R06NE2x62IefInv6x064GE24EjUfEAQA")}
               </li>
