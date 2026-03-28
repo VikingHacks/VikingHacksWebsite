@@ -426,7 +426,15 @@ if __name__ == "__main__":
               <rect width="8" height="8" className="fill-[#0057FF]" />
             </svg> Project Submission Guidelines
           </h2>
-          <p className="text-gray-500">Submission details will be announced later today. Check back soon!</p>
+          <p className="mb-4">Submit your project on Devpost before the deadline.</p>
+          <a
+            href="https://vikinghacks-2026.devpost.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#003E54] text-white font-mono font-semibold px-6 py-3 hover:bg-[#00527A] transition-colors"
+          >
+            Join on Devpost →
+          </a>
         </div>
       ),
     },
