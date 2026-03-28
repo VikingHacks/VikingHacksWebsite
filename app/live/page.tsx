@@ -68,8 +68,8 @@ const TrackList = {
 };
 
 // Define the countdown start and event end times.
-const countdownStartTime = new Date('2026-03-28T09:00:00-08:00');
-const eventEndTime = new Date('2026-03-28T18:00:00-08:00');
+const countdownStartTime = new Date('2026-03-28T00:00:00-07:00');
+const eventEndTime = new Date('2026-03-28T18:00:00-07:00');
 
 // Helper function to compute the current countdown state.
 function getInitialCountdown() {
@@ -318,8 +318,6 @@ export default function Home() {
             </h3>
             <p>
               We are providing <strong>1 OpenAI API key</strong> for participants to use.
-              This key is shared, so at high usage times (like judging), there may be rate
-              limits. We recommend recording a demo while your project is working.
             </p>
             <ul className="list-decimal list-inside mt-1 space-y-2">
               <li>
@@ -428,83 +426,7 @@ if __name__ == "__main__":
               <rect width="8" height="8" className="fill-[#0057FF]" />
             </svg> Project Submission Guidelines
           </h2>
-          <h3 className="text-xl font-semibold mt-4 mb-2">
-            Using Marchup for Submission
-          </h3>
-          <p>
-            We are using{" "}
-            <a
-              href="https://marchup.net/"
-              className="text-blue-500 underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Marchup
-            </a>
-            , a platform many of you may not have used before. It functions like a LinkedIn
-            for high schoolers and will serve as the hub for all project submissions.
-          </p>
-          <h3 className="text-xl font-semibold mt-4">
-            How to Submit Your Project
-          </h3>
-          <ol className="list-decimal list-inside my-2 space-y-2">
-            <li>
-              Create an account on{" "}
-              <a
-                href="https://marchup.net/"
-                className="text-blue-500 underline"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Marchup
-              </a>
-              .
-            </li>
-            <li>
-              Find the{" "}
-                <a
-                  href="https://marchup.net/s/viking-hacks-2025/space/space/child-spaces"
-                  className="text-blue-500 underline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Viking Hacks 2026
-                </a>
-                {" "}
-              space.
-            </li>
-            <li>
-              <strong>Do not request to join the main space</strong>—this is unnecessary.
-            </li>
-            <li>
-              Create a <strong>child space</strong> under Viking Hacks 2026 for your project.
-            </li>
-            <li>
-              Post updates about your project in the child space's stream. These updates will
-              be considered during judging.
-            </li>
-          </ol>
-          <h3 className="text-xl font-semibold mt-6 mb-2">
-            Naming Your Child Space
-          </h3>
-          <div className="flex flex-col justify-start gap-1"> 
-          <p>
-            When creating your child space, you <strong>must</strong> use this format: {" "}
-            <span className="bg-gray-100 px-2 py-1 rounded-md text-sm font-mono">
-            TEAM NAME - TRACK NAME - TABLE NUMBER
-          </span>
-          </p>
-          <p className="">
-            <strong>Example:</strong> <code>Sunrise - Health/Wellness - 5</code>
-          </p>
-          </div>
-          <h3 className="text-xl font-semibold mt-6 mb-2">
-            Team Member Requirements
-          </h3>
-          <p className="text-red-600 mb-10">
-            All members of your team must sign up and be part of the child space.
-            Otherwise, they will be ineligible for prizes.
-          </p>
+          <p className="text-gray-500">Submission details will be announced later today. Check back soon!</p>
         </div>
       ),
     },
