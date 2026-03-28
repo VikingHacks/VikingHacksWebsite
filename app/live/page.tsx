@@ -200,14 +200,6 @@ export default function Home() {
     );
   };
 
-  const apiKeyText = (text: string) => {
-    return (
-      <kbd className="rounded-lg break-all bg-gray-100 px-[0.3rem] py-[0.15rem] text-pink-500">
-        {text}
-      </kbd>
-    );
-  };
-
   const highlightedCode = (code: string, language: string = "python") => {
     return (
       <pre className="p-4 overflow-x-auto bg-gray-50 text-black rounded-lg">
@@ -319,18 +311,22 @@ export default function Home() {
             <p>
               We are providing <strong>3 OpenAI API keys</strong> for participants to use.
             </p>
-            <p className="text-sm text-gray-500 mb-1">Try each of these; some should work</p>
-            <ul className="list-decimal list-inside mt-1 space-y-2">
-              <li>
-                {apiKeyText("sk-proj--McH4IESokJt8QNScd6rCAVphx0e3obgiFaAqesWwtphvl2KI3hwYPpFafLUKoDlpVFfhTEs1nT3B" + "lbkFJCW2LoVlckbfeEANpeWdi_iO5gxeGiFPFGv-olgjNt6R06NE2x62IefInv6x064GE24EjUfEAQA")}
-              </li>
-              <li>
-                {apiKeyText("sk-proj-Ud0UY2rGOtzk_i_L0WU74h6HpCeBaCmgx1dlp11T6IgZ0atwWKPwa2aTJlWJ6Q3Slgn6bZUvyzT3B" + "lbkFJKimVF3PJ8V0y5hReux00DLavjotgiTy99XzxE1wJqifY-5HEqrOMvOoEWz3rWQxHMlm0mXqJAA")}
-              </li>
-              <li>
-                {apiKeyText("sk-proj-irFJFB2WtlAHEU5249TzJ3Nbo8MOdeRBXJ_ovs69hglPSl-JBMniP9B3tNlqbAlBtQHO-kwTtmT3B" + "lbkFJ58U1eE3hCvk-NVcvh2izBtUsEO3ZHHBrxHFaU7OMaaqbcQ5IcFKxtSHPu5srUlsN8AD8a4UvoA")}
-              </li>
-            </ul>
+            <div className="mt-2 flex flex-col gap-2">
+              {[
+                { key: "sk-proj-df1RiQ4vRHK9Ujeg7Zo3e2a5pr-KXSKpdCR904Ay1WEtmYN_StIJGPFCaM6jxFisD8sAharjocT3B" + "lbkFJBDGB3cfH222MewVDa-JF6L-Yhv29_d2Mp39NyQbqGxBAcWVJjMzUPiq0mCob_otFdgzQaqzzEA", enabled: true },
+                { key: "sk-proj-OMcQguf3gNuAe3hfjTx8yH4p5_R_G4IS9GM3omoNWr-5XHpDsTkT4DFTEYRNvUpP0xPVPVAA6MT3B" + "lbkFJm8uTNLvMMNXiHa9RDs45StTH35agvJ6_pHDkWIkeYSfucPNzd19uj346nkjM7phpR1ng6SLK4A", enabled: true },
+                { key: "sk-proj-fivMcJHWGLF5TpWpb6XD_OVSG-h9XwPvGBzLAZSZaxKyCv7hgzEUT9AoOtMIQRa51SQc_nLpoLT3B" + "lbkFJmqzzoqQE4hsZATdeT9YNdjbhJnq1CTx5RzB7rpbKg0o-PQpbFBbzX9l4yTqpQ_40gb20-JiwgA", enabled: true },
+              ].map(({ key, enabled }, i) => (
+                <div key={i} className={`flex items-start gap-2 p-2 border ${enabled ? "border-green-400 bg-green-50" : "border-gray-300 bg-gray-50 opacity-50"}`}>
+                  <span className={`mt-[2px] shrink-0 text-xs font-mono font-bold px-1 py-[1px] ${enabled ? "bg-green-500 text-white" : "bg-gray-400 text-white"}`}>
+                    {enabled ? "ON" : "OFF"}
+                  </span>
+                  <span className={`break-all text-sm font-mono ${!enabled ? "line-through text-gray-400" : "text-pink-500"}`}>
+                    {key}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
           <p className="mt-1 font-medium tracking-tight text-red-600">
             If you face any issues with the API key, reach out to an organizer immediately.
