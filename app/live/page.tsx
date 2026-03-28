@@ -16,13 +16,13 @@ const TrackList = {
     "Defintely, especially for this track, be creative! Evaluate all aspects of the problem, and identify a specific angle of attack for the solution.",
     ],
   },
-  'Automation': {
+  'EdTech': {
     Description:
-    'There are many annoyances and inconveniences people encounter in their day-to-day lives, and there are many tedious aspects of life that can be streamlined. For this track, develop software to ease actions which people take daily through means including (but not limited to) automation. Top projects in this track are creative with the problems they solve and the manner in which they solve them.',
+    'Learning is a central part of everyday life, yet many aspects of it remain inefficient, inconsistent, or inaccessible. Identify a gap in how people learn, teach, or manage knowledge, and design a solution that improves the experience at either an individual or organizational level.',
     Guidelines: [
-    "Projects should focus on making tasks easier or more efficient.",
-    "Creativity and originality are key. Solutions that explore uncommon approaches to unique problems will receive higher scores from judges.",
-    "Addressing annoyances in a trivial manner which does not actually impact efficiency will not score well.",
+    "Projects should focus on fostering education.",
+    "Simplicity, impact, and actual real-world implementation use is key. Solutions that explore impactful approaches within education for an individual or classroom setting will receive higher scores.",
+    "Addressing non-existent education problems or niche educational issues will not score well..",
     ],
   },
   'Digital Media & Creativity': {
