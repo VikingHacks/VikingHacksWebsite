@@ -313,17 +313,13 @@ export default function Home() {
             </p>
             <div className="mt-2 flex flex-col gap-2">
               {[
-                { key: "sk-proj-df1RiQ4vRHK9Ujeg7Zo3e2a5pr-KXSKpdCR904Ay1WEtmYN_StIJGPFCaM6jxFisD8sAharjocT3B" + "lbkFJBDGB3cfH222MewVDa-JF6L-Yhv29_d2Mp39NyQbqGxBAcWVJjMzUPiq0mCob_otFdgzQaqzzEA", enabled: true },
-                { key: "sk-proj-OMcQguf3gNuAe3hfjTx8yH4p5_R_G4IS9GM3omoNWr-5XHpDsTkT4DFTEYRNvUpP0xPVPVAA6MT3B" + "lbkFJm8uTNLvMMNXiHa9RDs45StTH35agvJ6_pHDkWIkeYSfucPNzd19uj346nkjM7phpR1ng6SLK4A", enabled: true },
-                { key: "sk-proj-fivMcJHWGLF5TpWpb6XD_OVSG-h9XwPvGBzLAZSZaxKyCv7hgzEUT9AoOtMIQRa51SQc_nLpoLT3B" + "lbkFJmqzzoqQE4hsZATdeT9YNdjbhJnq1CTx5RzB7rpbKg0o-PQpbFBbzX9l4yTqpQ_40gb20-JiwgA", enabled: true },
-              ].map(({ key, enabled }, i) => (
-                <div key={i} className={`flex items-start gap-2 p-2 border ${enabled ? "border-green-400 bg-green-50" : "border-gray-300 bg-gray-50 opacity-50"}`}>
-                  <span className={`mt-[2px] shrink-0 text-xs font-mono font-bold px-1 py-[1px] ${enabled ? "bg-green-500 text-white" : "bg-gray-400 text-white"}`}>
-                    {enabled ? "ON" : "OFF"}
-                  </span>
-                  <span className={`break-all text-sm font-mono ${!enabled ? "line-through text-gray-400" : "text-pink-500"}`}>
-                    {key}
-                  </span>
+                "sk-proj-df1RiQ4vRHK9Ujeg7Zo3e2a5pr-KXSKpdCR904Ay1WEtmYN_StIJGPFCaM6jxFisD8sAharjocT3B" + "lbkFJBDGB3cfH222MewVDa-JF6L-Yhv29_d2Mp39NyQbqGxBAcWVJjMzUPiq0mCob_otFdgzQaqzzEA",
+                "sk-proj-OMcQguf3gNuAe3hfjTx8yH4p5_R_G4IS9GM3omoNWr-5XHpDsTkT4DFTEYRNvUpP0xPVPVAA6MT3B" + "lbkFJm8uTNLvMMNXiHa9RDs45StTH35agvJ6_pHDkWIkeYSfucPNzd19uj346nkjM7phpR1ng6SLK4A",
+                "sk-proj-fivMcJHWGLF5TpWpb6XD_OVSG-h9XwPvGBzLAZSZaxKyCv7hgzEUT9AoOtMIQRa51SQc_nLpoLT3B" + "lbkFJmqzzoqQE4hsZATdeT9YNdjbhJnq1CTx5RzB7rpbKg0o-PQpbFBbzX9l4yTqpQ_40gb20-JiwgA",
+              ].map((key, i) => (
+                <div key={i} className="border p-3">
+                  <p className="text-xs font-mono text-gray-400 mb-1">Key {i + 1}</p>
+                  <p className="break-all text-sm font-mono text-pink-500">{key}</p>
                 </div>
               ))}
             </div>
