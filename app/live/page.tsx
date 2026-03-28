@@ -7,22 +7,31 @@ import Image from 'next/image';
 import { Balancer } from 'react-wrap-balancer';  
 
 const TrackList = {
-  'Health/Wellbeing': {
+  'Overkill': {
     Description:
-      'Technology plays a crucial role in improving healthcare, mental wellness, and overall well-being. For this track, develop software that enhances access to healthcare, promotes healthy lifestyles, or address gaps in wellness and accessibility. The top projects in this track will use unique solutions to tackle common challenges in a new and impactful way.',
+    'Obviously, we live in an imperfect world. For this track, identify a relevant problem in the world, and implement a solution which would be considered complex, or unnecessary convoluted. Alternatively, find and solve a niche problem only relevant to your group’s lives, and show how more people should address your topic. Have fun with this track, and of course, be creative!',
     Guidelines: [
-      "Projects should focus on health, wellness, accessibility, or healthcare innovation",
-      "Creativity and originality are key. Solutions that explore uncommon approaches, unique APIs, or novel applications will receive higher scores from judges.",
-      "Simply repackaging existing tools (e.g., ChatGPT wrappers) will not score as well.",
+    "Projects should address some clearly articulated problem.",
+    "Arguably, the most important criterion for this track is the effectiveness of the solution for the chosen problem.",
+    "Defintely, especially for this track, be creative! Evaluate all aspects of the problem, and identify a specific angle of attack for the solution.",
     ],
   },
-  'Educational Tech': {
+  'Automation': {
     Description:
-      'Education has changed a lot in the past few years with Generative AI hitting the market. This new technology has the potential to make learning more engaging, accessible, and effective. For this track, develop software that enhances education, whether by improving learning experiences, increasing accessibility, or addressing gaps in traditional educational methods.',
+    'There are many annoyances and inconveniences people encounter in their day-to-day lives, and there are many tedious aspects of life that can be streamlined. For this track, develop software to ease actions which people take daily through means including (but not limited to) automation. Top projects in this track are creative with the problems they solve and the manner in which they solve them.',
     Guidelines: [
-      "Projects should focus on improving education, learning accessibility, or skill development.",
-      "Innovation is key. Judges will give higher scores to solutions that build off uncommon approaches, unique APIs, or novel educational techniques rather than repackaging existing tools (e.g., basic chatbot tutors)",
-      "Consider user experience—effective educational tools should be engaging, scalable, and easy to use.",
+    "Projects should focus on making tasks easier or more efficient.",
+    "Creativity and originality are key. Solutions that explore uncommon approaches to unique problems will receive higher scores from judges.",
+    "Addressing annoyances in a trivial manner which does not actually impact efficiency will not score well.",
+    ],
+  },
+  'Digital Media & Creativity': {
+    Description:
+    'In today\'s world, tools are all the hype, especially with the advent of Generative AI. In this track, create tools to enhance experiences for creators in arts, music, design, or digital media. There is lots of room for creativity, for example: design a tool to give artists inspiration or build a platform to showcase art.',
+    Guidelines: [
+    "Projects should focus on improving digital media, specifically art creation.",
+    "Innovation is key. Judges will give higher scores to solutions that build off uncommon approaches, unique APIs, or novel applications rather than repackaging existing tools and strategies.",
+    "Consider user experience and established talent and skills—effective creative tools should be applicable, effective, and easy to use.",
     ],
   },
   'Low/No Code': {
@@ -32,15 +41,35 @@ const TrackList = {
       "Solutions must be built primarily using low-code or no-code tools such as app builders, workflow automation tools, or API integrations.",
       "Design mockups in Figma are allowed, but they should represent a clear MVP with a defined user flow.",
       "You must use a low-code or no-code platform (e.g., Bubble, Webflow, Make, Google AppSheet).",
-      "Projects should be user-friendly and demonstrate the effectiveness of low/no-code development",
-      "Open to all experience levels",
+      "Projects should be user-friendly and demonstrate the effectiveness of low/no-code development.",
+      "Open to all experience levels!",
     ],
   },
+  // 2025 TRACKS (old)
+  //
+  // 'Health/Wellbeing': {
+  //   Description:
+  //     'Technology plays a crucial role in improving healthcare, mental wellness, and overall well-being. For this track, develop software that enhances access to healthcare, promotes healthy lifestyles, or address gaps in wellness and accessibility. The top projects in this track will use unique solutions to tackle common challenges in a new and impactful way.',
+  //   Guidelines: [
+  //     "Projects should focus on health, wellness, accessibility, or healthcare innovation",
+  //     "Creativity and originality are key. Solutions that explore uncommon approaches, unique APIs, or novel applications will receive higher scores from judges.",
+  //     "Simply repackaging existing tools (e.g., ChatGPT wrappers) will not score as well.",
+  //   ],
+  // },
+  // 'Educational Tech': {
+  //   Description:
+  //     'Education has changed a lot in the past few years with Generative AI hitting the market. This new technology has the potential to make learning more engaging, accessible, and effective. For this track, develop software that enhances education, whether by improving learning experiences, increasing accessibility, or addressing gaps in traditional educational methods.',
+  //   Guidelines: [
+  //     "Projects should focus on improving education, learning accessibility, or skill development.",
+  //     "Innovation is key. Judges will give higher scores to solutions that build off uncommon approaches, unique APIs, or novel educational techniques rather than repackaging existing tools (e.g., basic chatbot tutors)",
+  //     "Consider user experience—effective educational tools should be engaging, scalable, and easy to use.",
+  //   ],
+  // },
 };
 
 // Define the countdown start and event end times.
-const countdownStartTime = new Date('2025-02-15T09:00:00-08:00');
-const eventEndTime = new Date('2025-02-15T18:00:00-08:00');
+const countdownStartTime = new Date('2026-03-28T09:00:00-08:00');
+const eventEndTime = new Date('2026-03-28T18:00:00-08:00');
 
 // Helper function to compute the current countdown state.
 function getInitialCountdown() {
@@ -202,7 +231,7 @@ export default function Home() {
             </svg> Hello there!
           </h2>
           <p>
-            Welcome to Viking Hacks 2025! In this competition, you'll have the chance
+            Welcome to Viking Hacks 2026! In this competition, you'll have the chance
             to innovate, create, and collaborate with peers to solve real-world challenges.
             Choose from various that cater to different interests and expertise levels.
           </p>
@@ -219,7 +248,7 @@ export default function Home() {
             </svg> Hackathon Tracks
           </h2>
           <p>
-            Viking Hacks 2025 will have 3 tracks participants can choose from. Your project must be directly related to the topic and guidelines of your track.
+            Viking Hacks 2026 will have 4 tracks participants can choose from. Your project must be directly related to the topic and guidelines of your track.
           </p>
           <div className="mt-4 flex flex-col gap-2">
             {Object.entries(TrackList).map(([TrackName, { Description, Guidelines }]) => {
@@ -277,7 +306,7 @@ export default function Home() {
             </svg> Setup, WiFi, and Apps
           </h2>
           <p>
-            To get started, connect to the event WiFi: {kbdText("FUSDGuest")}
+            To get started, connect to the event WiFi: {kbdText("FUSD Guest")}
           </p>
           <h1 className="font-semibold text-xl mt-6">Free API Keys</h1>
           <div className="p-3 border">
@@ -288,24 +317,18 @@ export default function Home() {
               }} />
             </h3>
             <p>
-              We are providing <strong>3 OpenAI API keys</strong> for participants to use.
-              These keys are shared, so at high usage times (like judging), there may be rate
+              We are providing <strong>1 OpenAI API key</strong> for participants to use.
+              This key is shared, so at high usage times (like judging), there may be rate
               limits. We recommend recording a demo while your project is working.
             </p>
             <ul className="list-decimal list-inside mt-1 space-y-2">
               <li>
                 {apiKeyText("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")}
               </li>
-              <li>
-                {apiKeyText("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")}
-              </li>
-              <li>
-                {apiKeyText("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")}
-              </li>
             </ul>
           </div>
           <p className="mt-1 font-medium tracking-tight text-red-600">
-            If you face any issues with the API keys, reach out to an organizer immediately.
+            If you face any issues with the API key, reach out to an organizer immediately.
           </p>
           <h3 className="text-xl font-semibold mt-6 mb-2">
             OpenAI Example
@@ -445,7 +468,7 @@ if __name__ == "__main__":
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Viking Hacks 2025
+                  Viking Hacks 2026
                 </a>
                 {" "}
               space.
@@ -454,7 +477,7 @@ if __name__ == "__main__":
               <strong>Do not request to join the main space</strong>—this is unnecessary.
             </li>
             <li>
-              Create a <strong>child space</strong> under Viking Hacks 2025 for your project.
+              Create a <strong>child space</strong> under Viking Hacks 2026 for your project.
             </li>
             <li>
               Post updates about your project in the child space's stream. These updates will
@@ -501,43 +524,54 @@ if __name__ == "__main__":
                     Grand Prize
                   </p>
                   <p className="text-lg font-bold">
-                    Sony ULT WEAR Noise Cancelling Headphones
+                    Sony WH1000XM5 Headphones
                   </p>
                 </h1>
               </li>
               <li className="flex flex-col gap-2">
                 <h1 className="flex gap-2 font-mono items-center">
                   <p className="bg-orange-400 px-2 py-[0.1rem] font-light">
-                    $1,500
+                    Runner Up
                   </p>
-                  <p className="text-lg font-bold">LaunchX Scholarship</p>
-                </h1>
-                <Balancer className="leading-tight">
-                  LaunchX is not just a program; it&apos;s where future entrepreneurs are
-                  made. With world-class mentorship, hands-on experience, and a global network
-                  of innovators, LaunchX has shaped some of the brightest young founders in the world.
-                </Balancer>
-              </li>
-              <li className="">
-                <h1 className="flex gap-2 font-mono items-center">
-                  <p className="bg-black px-2 py-[0.1rem] text-white font-light">
-                    Ed Tech 1st Place
-                  </p>
-                  <p className="text-lg font-bold">JBL Clip 3</p>
+                  <p className="text-lg font-bold">Bambu Lab A1 Mini 3D Printer</p>
                 </h1>
               </li>
               <li className="">
                 <h1 className="flex gap-2 font-mono items-center">
                   <p className="bg-black px-2 py-[0.1rem] text-white font-light">
-                    Ed Tech 2nd Place
+                    Overkill 1st Place
                   </p>
-                  <p className="text-lg font-bold">Govee Smart LED Strip</p>
+                  <p className="text-lg font-bold">Amazon Echo</p>
                 </h1>
               </li>
               <li className="">
                 <h1 className="flex gap-2 font-mono items-center">
                   <p className="bg-black px-2 py-[0.1rem] text-white font-light">
-                    Health/Wellbeing 1st Place
+                    Overkill 2nd Place
+                  </p>
+                  <p className="text-lg font-bold">Govee RGBIC LED Strip Lights</p>
+                </h1>
+              </li>
+              <li className="">
+                <h1 className="flex gap-2 font-mono items-center">
+                  <p className="bg-black px-2 py-[0.1rem] text-white font-light">
+                    Automation 1st Place
+                  </p>
+                  <p className="text-lg font-bold">Remote Control Drone</p>
+                </h1>
+              </li>
+              <li className="">
+                <h1 className="flex gap-2 font-mono items-center">
+                  <p className="bg-black px-2 py-[0.1rem] text-white font-light">
+                    Automation 2nd Place
+                  </p>
+                  <p className="text-lg font-bold">Logitech Mouse</p>
+                </h1>
+              </li>
+              <li className="">
+                <h1 className="flex gap-2 font-mono items-center">
+                  <p className="bg-black px-2 py-[0.1rem] text-white font-light">
+                    Digital Media &amp; Creativity 1st Place
                   </p>
                   <p className="text-lg font-bold">Apple Airtag</p>
                 </h1>
@@ -545,9 +579,11 @@ if __name__ == "__main__":
               <li className="">
                 <h1 className="flex gap-2 font-mono items-center">
                   <p className="bg-black px-2 py-[0.1rem] text-white font-light">
-                    Health/Wellbeing 2nd Place
+                    Digital Media &amp; Creativity 2nd Place
                   </p>
-                  <p className="text-lg font-bold">Anker Wireless Charger</p>
+                  <p className="text-lg font-bold">
+                    Bluetooth Speaker
+                  </p>
                 </h1>
               </li>
               <li className="">
@@ -555,7 +591,7 @@ if __name__ == "__main__":
                   <p className="bg-black px-2 py-[0.1rem] text-white font-light">
                     Low/No Code 1st Place
                   </p>
-                  <p className="text-lg font-bold">Anker Powercore</p>
+                  <p className="text-lg font-bold">Anchor Wireless Charger</p>
                 </h1>
               </li>
               <li className="">
@@ -564,7 +600,7 @@ if __name__ == "__main__":
                     Low/No Code 2nd Place
                   </p>
                   <p className="text-lg font-bold">
-                    Rocketbook Smart Reusable Notebook
+                    Merch + LMNT + Tote Bags
                   </p>
                 </h1>
               </li>
