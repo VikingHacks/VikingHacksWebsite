@@ -485,7 +485,7 @@ if __name__ == "__main__":
               <li className="">
                 <h1 className="flex gap-2 font-mono items-center">
                   <p className="bg-black px-2 py-[0.1rem] text-white font-light">
-                    Automation 1st Place
+                    EdTech 1st Place
                   </p>
                   <p className="text-lg font-bold">Remote Control Drone</p>
                 </h1>
@@ -493,7 +493,7 @@ if __name__ == "__main__":
               <li className="">
                 <h1 className="flex gap-2 font-mono items-center">
                   <p className="bg-black px-2 py-[0.1rem] text-white font-light">
-                    Automation 2nd Place
+                    EdTech 2nd Place
                   </p>
                   <p className="text-lg font-bold">Logitech Mouse</p>
                 </h1>
