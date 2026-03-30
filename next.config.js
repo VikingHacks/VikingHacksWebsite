@@ -31,7 +31,7 @@ module.exports = {
 
       {
         source: '/feedback',
-        destination: 'https://forms.gle/ZWS9gU67MxZdQQTT9',
+        destination: 'https://forms.gle/T3PkoZsPVoMPUxUv7',
         permanent: true,
       },
 
