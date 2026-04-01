@@ -52,6 +52,12 @@ module.exports = {
         destination: 'https://photos.app.goo.gl/Z1Zj6GMDCxH7odPj8',
         permanent: true,
       },
+
+      {
+        source: '/photos26',
+        destination: 'https://photos.app.goo.gl/b2fcackaQwMtMyBR7',
+        permanent: true,
+      },
     ]
   },
   images: {
