@@ -277,6 +277,68 @@ const supporters: { name: string; logo: string; link: string; }[] = [
   }
 ];
 
+const EdTech = [
+  {
+    name: "Lucida",
+    people: "Aadi Tiwari, Yuveer Sachdev",
+    place: "1st",
+  },
+  {
+    name: "Tailrd",
+    people: "Vihaan Parikh, Vikram Atmuri",
+    place: "2nd",
+  },
+];
+const DigMediaAndCreativity = [
+  {
+    name: "BitMuseum",
+    people: "Anish Yerrakonda, Kishan Paschapur, Yuki Tanaka",
+    place: "1st",
+  },
+  {
+    name: "Flipus",
+    people: "Stanley Ho, Nico Zametto",
+    place: "2nd",
+  },
+];
+const Overkill = [
+  {
+    name: "Memguard",
+    people: "Sahil Ganapa, Avneh Bhatia, Prashast Bhatia, Bingyuan Wen",
+    place: "1st",
+  },
+  {
+    name: "YellowLite",
+    people: "Prayag Nambiar, Vivaan Srivastava",
+    place: "2nd",
+  },
+];
+const LowNoCode = [
+  {
+    name: "Heirloom",
+    people: "Manish Parthasarathi, Karthik Tummala, Sanjay Vellore",
+    place: "1st",
+  },
+  {
+    name: "StudyGrid",
+    people: "Olivia Hung, Amrita Elanchezhian",
+    place: "2nd",
+  },
+];
+const GrandWinner = [
+  {
+    name: "turnittouch",
+    people: "Prasham Yadothare, Eshaan Savanur, Yashmit Sunkara, Riddhish Saravanan, Rohan Devnani",
+    place: "1st",
+  },
+  {
+    name: "Qriptix",
+    people: "Aarush Sharma, Pretham Raghav Balaji, Vivek Chandrapati",
+    place: "2nd",
+  },
+];
+
+
 export default function HomePage() {
   return (
     <>
@@ -384,6 +446,14 @@ export default function HomePage() {
             </h2>
           </div>
 
+          {/* Winners Section */}
+          <section className="text-black py-20 w-full">
+            <span className="text-[10vw] md:text-[4vw] font-medium leading-none tracking-tighter">Winners</span>
+            {/* <Winners partners={EdTech} diamond={DigMediaAndCreativity} gold={LowNoCode} supporters={GrandWinner} SFBUAward={Overkill} /> */}
+            <Winners grand={GrandWinner} edtech={EdTech} digmedcre={DigMediaAndCreativity} overkill={Overkill} lowno={LowNoCode} />
+          </section>
+
+          {/* FAQ Section */}
           <div className="flex flex-col md:flex-row my-20 md:mt-10 w-full">
             {/* Sticky FAQ section */}
             <div className="sticky-container block w-full lg:min-w-[40%] lg:w-[40%]">

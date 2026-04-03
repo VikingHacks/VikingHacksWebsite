@@ -1,22 +1,21 @@
 import React from "react";
 import { Balancer } from "react-wrap-balancer";
 
-type Sponsor = {
+type WinnerData = {
   name: string;
-  people: string; // URL to the sponsor's logo
-  place: string; // Sponsor's website link
+  people: string; 
+  place: string; 
 };
 
-type SponsorsProps = {
-  partners: Sponsor[]; // Top-tier sponsors
-  diamond: Sponsor[]; // Diamond sponsors
-  gold: Sponsor[]; // Gold sponsors
-  supporters: Sponsor[]; // Gold sponsors
-  SFBUAward: Sponsor[]; // Gold sponsors
-  LaunchX: Sponsor[]; // Gold sponsors
+type WinnersProps = {
+  grand: WinnerData[];
+  edtech: WinnerData[];
+  digmedcre: WinnerData[];
+  overkill: WinnerData[];
+  lowno: WinnerData[];
 };
 
-const Winners: React.FC<SponsorsProps> = ({ partners, diamond, gold, supporters, SFBUAward, LaunchX}) => {
+const Winners: React.FC<WinnersProps> = ({ grand, edtech, digmedcre, overkill, lowno }) => {
   // Section rendering helper
   const WinnerSection = ({
     title,
@@ -24,7 +23,7 @@ const Winners: React.FC<SponsorsProps> = ({ partners, diamond, gold, supporters,
     gridCols,
   }: {
     title: string;
-    sponsors: Sponsor[];
+    sponsors: WinnerData[];
     gridCols: string;
   }) => (
     <div className="my-10">
@@ -55,45 +54,33 @@ const Winners: React.FC<SponsorsProps> = ({ partners, diamond, gold, supporters,
       id="sponsors-section"
     >
       <div className="relative">
-        {/* Partner Section */}
         <WinnerSection
-          title="Educational Technology"
-          sponsors={partners}
+          title="Grand Winners"
+          sponsors={grand}
           gridCols="grid-cols-1 md:grid-cols-2 lg:grid-cols-5"
         />
 
-        {/* Diamond Section */}
         <WinnerSection
-          title="Health and Wellness"
-          sponsors={diamond}
+          title="Educational Technology"
+          sponsors={edtech}
           gridCols="grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5"
         />
 
-        {/* Gold Section */}
+        <WinnerSection
+          title="Digital Media &amp; Creativity"
+          sponsors={digmedcre}
+          gridCols="grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+        />
+
+        <WinnerSection
+          title="Overkill"
+          sponsors={overkill}
+          gridCols="grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+        />
+
         <WinnerSection
           title="Low/No Code"
-          sponsors={gold}
-          gridCols="grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
-        />
-
-        {/* Gold Section */}
-        <WinnerSection
-          title="SFBU Momentum Award"
-          sponsors={SFBUAward}
-          gridCols="grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
-        />
-
-        {/* Gold Section */}
-        <WinnerSection
-          title="LaunchX $1500 Scholarship"
-          sponsors={LaunchX}
-          gridCols="grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
-        />
-
-        {/* Gold Section */}
-        <WinnerSection
-          title="Grand Winner"
-          sponsors={supporters}
+          sponsors={lowno}
           gridCols="grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
         />
       </div>
